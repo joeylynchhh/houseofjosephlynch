@@ -4,6 +4,35 @@ import { Button, Heading } from "@medusajs/ui"
 const Hero = () => {
   return (
     <div className="h-[75vh] w-full border-b border-ui-border-base relative bg-ui-bg-subtle">
+      {/* Background containers */}
+      <div className="absolute inset-0 flex">
+        <div 
+          className="w-1/2 h-full bg-cover bg-center transition-transform duration-300 hover:scale-105"
+          style={{
+            backgroundImage: "url('/images/woman-category.jpg')",
+            backgroundBlendMode: "multiply",
+            backgroundColor: "rgba(89, 73, 67, 0.1)"
+          }}
+        >
+          <div className="w-full h-full flex items-center justify-center">
+            <span className="text-white text-4xl font-light tracking-wider">Woman</span>
+          </div>
+        </div>
+        <div 
+          className="w-1/2 h-full bg-cover bg-center transition-transform duration-300 hover:scale-105"
+          style={{
+            backgroundImage: "url('/images/man-category.jpg')",
+            backgroundBlendMode: "multiply",
+            backgroundColor: "rgba(89, 73, 67, 0.1)"
+          }}
+        >
+          <div className="w-full h-full flex items-center justify-center">
+            <span className="text-white text-4xl font-light tracking-wider">Man</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Existing content overlay */}
       <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center small:p-32 gap-6">
         <span>
           <Heading
@@ -25,7 +54,7 @@ const Hero = () => {
           rel="noreferrer"
         >
           <h1 style={{ textDecoration: "underline" }}>
-            Visit the shop
+            Enter the shop
           </h1>
         </a>
       </div>
