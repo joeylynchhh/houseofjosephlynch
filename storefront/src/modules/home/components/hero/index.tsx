@@ -1,6 +1,5 @@
 import { Github } from "@medusajs/icons"
 import { Button, Heading } from "@medusajs/ui"
-import LocalizedClientLink from "@modules/common/components/localized-client-link"
 
 const Hero = () => {
   return (
@@ -14,9 +13,7 @@ const Hero = () => {
           }}
         >
           <div className="w-full h-full bg-black bg-opacity-20 flex items-end pb-[12%] p-8">
-            <LocalizedClientLink href="/womens" className="text-white text-3xl font-light hover:opacity-80">
-              Woman
-            </LocalizedClientLink>
+            <span className="text-white text-3xl font-light">Woman</span>
           </div>
         </div>
         <div 
@@ -26,9 +23,7 @@ const Hero = () => {
           }}
         >
           <div className="w-full h-full bg-black bg-opacity-20 flex items-end pb-[12%] p-8">
-            <LocalizedClientLink href="/mens" className="text-white text-3xl font-light hover:opacity-80">
-              Man
-            </LocalizedClientLink>
+            <span className="text-white text-3xl font-light">Man</span>
           </div>
         </div>
       </div>
