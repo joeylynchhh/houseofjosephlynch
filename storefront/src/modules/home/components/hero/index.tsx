@@ -5,11 +5,11 @@ import LocalizedClientLink from "@modules/common/components/localized-client-lin
 const Hero = () => {
   return (
     <div className="h-screen w-full border-b border-ui-border-base relative bg-ui-bg-subtle overflow-hidden">
-      {/* Background images container */}
-      <div className="absolute inset-0 w-full h-[112%] flex">
+      {/* Background images container - adjust height to account for header */}
+      <div className="absolute inset-0 w-full h-[112%] flex mt-[60px]">
         <LocalizedClientLink 
           href="/womens"
-          className="w-1/2 h-full relative group"
+          className="w-1/2 h-full relative group cursor-pointer"
         >
           <div 
             className="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
@@ -25,7 +25,7 @@ const Hero = () => {
 
         <LocalizedClientLink 
           href="/mens"
-          className="w-1/2 h-full relative group"
+          className="w-1/2 h-full relative group cursor-pointer"
         >
           <div 
             className="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
