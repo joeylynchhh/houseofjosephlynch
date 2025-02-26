@@ -3,7 +3,7 @@ import { Button, Heading } from "@medusajs/ui"
 
 const Hero = () => {
   return (
-    <div className="h-[75vh] w-full border-b border-ui-border-base relative bg-ui-bg-subtle">
+    <div className="h-screen w-full border-b border-ui-border-base relative bg-ui-bg-subtle">
       {/* Background images container */}
       <div className="absolute inset-0 w-full h-full flex">
         <div 
