@@ -111,22 +111,22 @@ export default async function Footer() {
               <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
                 <li>
                   <a
-                    href="https://github.com/medusajs"
+                    href="/refund-policy"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
-                    GitHub
+                    Refund Policy
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://docs.medusajs.com"
+                    href="/privacy-policy"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
-                    Documentation
+                    Privacy Policy
                   </a>
                 </li>
                 <li>
@@ -136,7 +136,37 @@ export default async function Footer() {
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
-                    Source code
+                    Terms of Service
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/shipping-policy"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-ui-fg-base"
+                  >
+                    Shipping Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/legal-notice"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-ui-fg-base"
+                  >
+                    Legal Notice
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/contact"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-ui-fg-base"
+                  >
+                    Contact 
                   </a>
                 </li>
               </ul>
@@ -145,7 +175,7 @@ export default async function Footer() {
         </div>
         <div className="flex w-full mb-16 justify-between text-ui-fg-muted">
           <Text className="txt-compact-small">
-            © {new Date().getFullYear()} Medusa Store. All rights reserved.
+            © {new Date().getFullYear()} House of Joseph Lynch. All rights reserved.
           </Text>
           <MedusaCTA />
         </div>
