@@ -306,7 +306,11 @@ export default async function seedDemoData({ container }: ExecArgs) {
     input: {
       product_categories: [
         {
-          name: "Shirts",
+          name: "Crew Neck",
+          is_active: true,
+        },
+        {
+          name: "Sweatpants",
           is_active: true,
         },
         {
@@ -314,11 +318,7 @@ export default async function seedDemoData({ container }: ExecArgs) {
           is_active: true,
         },
         {
-          name: "Pants",
-          is_active: true,
-        },
-        {
-          name: "Merch",
+          name: "Shirts",
           is_active: true,
         },
       ],
