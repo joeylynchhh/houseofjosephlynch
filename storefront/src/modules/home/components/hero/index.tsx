@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="absolute inset-0 w-full h-[112%] flex">
         <LocalizedClientLink 
           href="/womens"
-          className="w-1/2 h-full relative group"
+          className="w-1/2 h-full relative group cursor-pointer"
         >
           <div 
             className="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
@@ -18,14 +18,14 @@ const Hero = () => {
             }}
           >
             <div className="w-full h-full bg-black bg-opacity-20 flex items-end pb-[12%] p-8">
-              <span className="text-white text-3xl font-light">Woman</span>
+              <span className="text-white text-3xl font-light pointer-events-none">Woman</span>
             </div>
           </div>
         </LocalizedClientLink>
 
         <LocalizedClientLink 
           href="/mens"
-          className="w-1/2 h-full relative group"
+          className="w-1/2 h-full relative group cursor-pointer"
         >
           <div 
             className="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
@@ -34,7 +34,7 @@ const Hero = () => {
             }}
           >
             <div className="w-full h-full bg-black bg-opacity-20 flex items-end pb-[12%] p-8">
-              <span className="text-white text-3xl font-light">Man</span>
+              <span className="text-white text-3xl font-light pointer-events-none">Man</span>
             </div>
           </div>
         </LocalizedClientLink>
