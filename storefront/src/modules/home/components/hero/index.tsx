@@ -18,7 +18,7 @@ const Hero = () => {
             }}
           >
             <div className="w-full h-full bg-black bg-opacity-20 flex items-end pb-[12%] p-8">
-              <span className="text-white text-3xl font-light">Woman</span>
+              <span className="text-white text-3xl font-light">Women</span>
             </div>
           </div>
         </LocalizedClientLink>
@@ -34,7 +34,7 @@ const Hero = () => {
             }}
           >
             <div className="w-full h-full bg-black bg-opacity-20 flex items-end pb-[12%] p-8">
-              <span className="text-white text-3xl font-light">Man</span>
+              <span className="text-white text-3xl font-light">Men</span>
             </div>
           </div>
         </LocalizedClientLink>
