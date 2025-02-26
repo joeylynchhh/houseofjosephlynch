@@ -1,43 +1,31 @@
 import { Github } from "@medusajs/icons"
 import { Button, Heading } from "@medusajs/ui"
-import LocalizedClientLink from "@modules/common/components/localized-client-link"
 
 const Hero = () => {
   return (
-    <div className="h-[calc(100vh-4rem)] w-full relative bg-ui-bg-subtle overflow-hidden mt-16">
+    <div className="h-screen w-full border-b border-ui-border-base relative bg-ui-bg-subtle overflow-hidden">
       {/* Background images container */}
       <div className="absolute inset-0 w-full h-[112%] flex">
-        <LocalizedClientLink 
-          href="/womens"
-          className="w-1/2 h-full relative group"
+        <div 
+          className="w-1/2 h-full bg-cover bg-center transition-transform duration-300 hover:scale-105"
+          style={{
+            backgroundImage: "url('/ZIPPER4504_fd50cec1-1eb8-4150-b158-1a6a3c4dd625.png.webp')",
+          }}
         >
-          <div 
-            className="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
-            style={{
-              backgroundImage: "url('/ZIPPER4504_fd50cec1-1eb8-4150-b158-1a6a3c4dd625.png.webp')",
-            }}
-          >
-            <div className="w-full h-full bg-black bg-opacity-20 flex items-end pb-[12%] p-8">
-              <span className="text-white text-3xl font-light">Women</span>
-            </div>
+          <div className="w-full h-full bg-black bg-opacity-20 flex items-end pb-[12%] p-8">
+            <span className="text-white text-3xl font-light">Woman</span>
           </div>
-        </LocalizedClientLink>
-
-        <LocalizedClientLink 
-          href="/mens"
-          className="w-1/2 h-full relative group"
+        </div>
+        <div 
+          className="w-1/2 h-full bg-cover bg-center transition-transform duration-300 hover:scale-105"
+          style={{
+            backgroundImage: "url('/1000GSMHOODIE1.png.webp')",
+          }}
         >
-          <div 
-            className="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
-            style={{
-              backgroundImage: "url('/1000GSMHOODIE1.png.webp')",
-            }}
-          >
-            <div className="w-full h-full bg-black bg-opacity-20 flex items-end pb-[12%] p-8">
-              <span className="text-white text-3xl font-light">Men</span>
-            </div>
+          <div className="w-full h-full bg-black bg-opacity-20 flex items-end pb-[12%] p-8">
+            <span className="text-white text-3xl font-light">Man</span>
           </div>
-        </LocalizedClientLink>
+        </div>
       </div>
 
       {/* Existing content overlay */}
