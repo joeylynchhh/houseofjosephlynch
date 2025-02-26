@@ -10,6 +10,8 @@ const Hero = () => {
           className="w-1/2 h-full bg-cover bg-center transition-transform duration-300 hover:scale-105"
           style={{
             backgroundImage: "url('/ZIPPER4504_fd50cec1-1eb8-4150-b158-1a6a3c4dd625.png.webp')",
+            objectFit: "cover",
+            objectPosition: "center 92%"
           }}
         >
           <div className="w-full h-full bg-black bg-opacity-20 flex items-end p-8">
@@ -20,6 +22,8 @@ const Hero = () => {
           className="w-1/2 h-full bg-cover bg-center transition-transform duration-300 hover:scale-105"
           style={{
             backgroundImage: "url('/1000GSMHOODIE1.png.webp')",
+            objectFit: "cover",
+            objectPosition: "center 92%"
           }}
         >
           <div className="w-full h-full bg-black bg-opacity-20 flex items-end p-8">
