@@ -9,7 +9,7 @@ const Hero = () => {
         <div 
           className="w-1/2 h-full bg-cover bg-center transition-transform duration-300 hover:scale-105"
           style={{
-            backgroundImage: "url('/images/woman-category.jpg')",
+            backgroundImage: "url('/images/woman-category.webp')",
             backgroundBlendMode: "multiply",
             backgroundColor: "rgba(89, 73, 67, 0.1)"
           }}
@@ -21,7 +21,7 @@ const Hero = () => {
         <div 
           className="w-1/2 h-full bg-cover bg-center transition-transform duration-300 hover:scale-105"
           style={{
-            backgroundImage: "url('/images/man-category.jpg')",
+            backgroundImage: "url('/images/man-category.webp')",
             backgroundBlendMode: "multiply",
             backgroundColor: "rgba(89, 73, 67, 0.1)"
           }}
