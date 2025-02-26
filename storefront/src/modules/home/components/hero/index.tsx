@@ -33,13 +33,13 @@ const Hero = () => {
         <span>
           <Heading
             level="h1"
-            className="text-3xl leading-10 text-ui-fg-base font-normal"
+            className="text-3xl leading-10 text-white font-normal"
           >
             Welcome to the House of Joseph Lynch
           </Heading>
           <Heading
             level="h2"
-            className="text-3xl leading-10 text-ui-fg-subtle font-normal"
+            className="text-3xl leading-10 text-white font-normal"
           >
             The finest streetwear in the Dominican Republic.
           </Heading>
@@ -49,7 +49,7 @@ const Hero = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <h1 style={{ textDecoration: "underline" }}>
+          <h1 className="text-white" style={{ textDecoration: "underline" }}>
             Enter the shop
           </h1>
         </a>
