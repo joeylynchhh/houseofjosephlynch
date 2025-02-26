@@ -131,7 +131,7 @@ export default async function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/refund-policy"
+                    href="/delivery-policy"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
@@ -141,7 +141,7 @@ export default async function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/shipping-policy"
+                    href="/delivery-returns"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
@@ -151,7 +151,7 @@ export default async function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://github.com/medusajs/nextjs-starter-medusa"
+                    href="/terms-of-service"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
