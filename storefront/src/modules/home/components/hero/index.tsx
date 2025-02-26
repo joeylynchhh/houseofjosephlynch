@@ -3,18 +3,16 @@ import { Button, Heading } from "@medusajs/ui"
 
 const Hero = () => {
   return (
-    <div className="h-screen w-full border-b border-ui-border-base relative bg-ui-bg-subtle">
+    <div className="h-screen w-full border-b border-ui-border-base relative bg-ui-bg-subtle overflow-hidden">
       {/* Background images container */}
-      <div className="absolute inset-0 w-full h-full flex">
+      <div className="absolute inset-0 w-full h-[112%] flex">
         <div 
           className="w-1/2 h-full bg-cover bg-center transition-transform duration-300 hover:scale-105"
           style={{
             backgroundImage: "url('/ZIPPER4504_fd50cec1-1eb8-4150-b158-1a6a3c4dd625.png.webp')",
-            objectFit: "cover",
-            objectPosition: "center 92%"
           }}
         >
-          <div className="w-full h-full bg-black bg-opacity-20 flex items-end p-8">
+          <div className="w-full h-full bg-black bg-opacity-20 flex items-end pb-[12%] p-8">
             <span className="text-white text-3xl font-light">Woman</span>
           </div>
         </div>
@@ -22,11 +20,9 @@ const Hero = () => {
           className="w-1/2 h-full bg-cover bg-center transition-transform duration-300 hover:scale-105"
           style={{
             backgroundImage: "url('/1000GSMHOODIE1.png.webp')",
-            objectFit: "cover",
-            objectPosition: "center 92%"
           }}
         >
-          <div className="w-full h-full bg-black bg-opacity-20 flex items-end p-8">
+          <div className="w-full h-full bg-black bg-opacity-20 flex items-end pb-[12%] p-8">
             <span className="text-white text-3xl font-light">Man</span>
           </div>
         </div>
