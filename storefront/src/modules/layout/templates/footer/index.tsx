@@ -111,12 +111,12 @@ export default async function Footer() {
               <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
                 <li>
                   <a
-                    href="/refund-policy"
+                    href="/contact"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
-                    Refund Policy
+                    Contact
                   </a>
                 </li>
                 <li>
@@ -131,12 +131,12 @@ export default async function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://github.com/medusajs/nextjs-starter-medusa"
+                    href="/refund-policy"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
-                    Terms of Service
+                    Refund Policy
                   </a>
                 </li>
                 <li>
@@ -151,22 +151,22 @@ export default async function Footer() {
                 </li>
                 <li>
                   <a
+                    href="https://github.com/medusajs/nextjs-starter-medusa"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-ui-fg-base"
+                  >
+                    Terms of Service
+                  </a>
+                </li>
+                <li>
+                  <a
                     href="/legal-notice"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
                     Legal Notice
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/contact"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="hover:text-ui-fg-base"
-                  >
-                    Contact 
                   </a>
                 </li>
               </ul>
