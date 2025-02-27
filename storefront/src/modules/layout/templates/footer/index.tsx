@@ -146,7 +146,7 @@ export default async function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/delivery-policy"
+                    href="/delivery-returns"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
