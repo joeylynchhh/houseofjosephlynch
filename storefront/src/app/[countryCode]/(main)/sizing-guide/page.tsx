@@ -10,19 +10,24 @@ export const metadata: Metadata = {
 
 const HOODIES = [
   {
-    title: "450 GSM HOODIE",
-    image: "/450-gsm-hoodie-sizing.png",
-    measurements: "/450-gsm-measurements.png"
+    title: "SHIRTS",
+    image: "/180shirt.webp",
+    measurements: "/300shirt.webp"
   },
   {
-    title: "600 GSM HOODIE",
-    image: "/600-gsm-hoodie-sizing.png",
-    measurements: "/600-gsm-measurements.png"
+    title: "CREWNECKS",
+    image: "/450crew.webp",
+    measurements: "/600crew.webp"
   },
   {
-    title: "1000 GSM HOODIE",
-    image: "/1000-gsm-hoodie-sizing.png",
-    measurements: "/1000-gsm-measurements.png"
+    title: "SWEATPANTS",
+    image: "/450Sweatpants.webp",
+    measurements: "/600Sweatpants.webp"
+  },
+  {
+    title: "SWEATSHIRTS",
+    image: "/450Sweatshirt.webp",
+    measurements: "/600Sweatshirt.webp"
   }
 ]
 
@@ -102,7 +107,7 @@ export default function SizingGuidePage() {
                       <LocalizedClientLink href="/contact" className="underline hover:text-gray-600">
                         contact us
                       </LocalizedClientLink>
-                      . Our team will be happy to assist you.
+                      . Our team will assign a specialist who will be happy to assist you.
                     </p>
                   </div>
                 </div>
