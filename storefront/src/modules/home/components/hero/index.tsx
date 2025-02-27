@@ -4,15 +4,15 @@ import LocalizedClientLink from "@modules/common/components/localized-client-lin
 
 const Hero = () => {
   return (
-    <div className="h-[calc(100vh-75px)] w-full relative bg-ui-bg-subtle overflow-hidden">
+    <div className="h-screen w-full relative bg-ui-bg-subtle">
       {/* Background images container */}
       <div className="absolute inset-0 w-full h-full flex z-0">
         <LocalizedClientLink 
           href="/womens"
-          className="w-1/2 h-full relative group cursor-pointer z-[1] overflow-hidden"
+          className="w-1/2 h-full relative group cursor-pointer z-[1]"
         >
           <div 
-            className="w-full h-[112%] bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+            className="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
             style={{
               backgroundImage: "url('/ZIPPER4504_fd50cec1-1eb8-4150-b158-1a6a3c4dd625.png.webp')",
             }}
@@ -27,10 +27,10 @@ const Hero = () => {
 
         <LocalizedClientLink 
           href="/mens"
-          className="w-1/2 h-full relative group cursor-pointer z-[1] overflow-hidden"
+          className="w-1/2 h-full relative group cursor-pointer z-[1]"
         >
           <div 
-            className="w-full h-[112%] bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+            className="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
             style={{
               backgroundImage: "url('/1000GSMHOODIE1.png.webp')",
             }}
@@ -51,7 +51,7 @@ const Hero = () => {
             level="h1"
             className="text-3xl leading-10 text-white font-normal"
           >
-            Welcome to the House of Joseph Lynch
+            Welcome to the House of Joseph Lynch!
           </Heading>
           <Heading
             level="h2"
