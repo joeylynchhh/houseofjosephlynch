@@ -42,50 +42,70 @@ export default function SizingGuidePage() {
 
           {/* Right Column - Content */}
           <div className="flex-1">
-            <CollapsibleSection title="Size Charts" defaultOpen={true}>
+            <CollapsibleSection title="450 GSM HOODIE" defaultOpen={true}>
               <div className="flex justify-between items-start">
-                <div className="flex-1 max-w-4xl ml-auto">
-                  <div className="grid grid-cols-2 gap-8">
-                    {/* Hoodie Size Guide */}
-                    <div className="relative aspect-[3/4] w-full">
+                <div className="flex-1 max-w-2xl ml-auto">
+                  <div className="text-sm space-y-8">
+                    {/* Hoodie Diagram */}
+                    <div className="relative w-full aspect-[4/3] mb-8">
                       <Image
-                        src="/size-guide-hoodie.jpg"
-                        alt="Hoodie Size Guide"
+                        src="/hoodie-diagram.png"
+                        alt="Hoodie Measurement Guide"
                         fill
                         className="object-contain"
                         priority
                       />
                     </div>
-                    
-                    {/* T-Shirt Size Guide */}
-                    <div className="relative aspect-[3/4] w-full">
-                      <Image
-                        src="/size-guide-tshirt.jpg"
-                        alt="T-Shirt Size Guide"
-                        fill
-                        className="object-contain"
-                        priority
-                      />
+
+                    {/* Measurements Table */}
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-left">
+                        <thead>
+                          <tr className="border-b border-gray-200">
+                            <th className="py-4 pr-8 font-light text-gray-600">CM / INCH</th>
+                            <th className="py-4 px-8 font-light text-gray-600">PIECE LENGTH (A)</th>
+                            <th className="py-4 px-8 font-light text-gray-600">CHEST WIDTH (B)</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr className="border-b border-gray-200">
+                            <td className="py-4 pr-8 font-light">XS</td>
+                            <td className="py-4 px-8 font-light">62 CM / 24.4"</td>
+                            <td className="py-4 px-8 font-light">58 CM /22.8"</td>
+                          </tr>
+                          <tr className="border-b border-gray-200">
+                            <td className="py-4 pr-8 font-light">S</td>
+                            <td className="py-4 px-8 font-light">64 CM / 25.1"</td>
+                            <td className="py-4 px-8 font-light">60 CM / 23.6"</td>
+                          </tr>
+                          <tr className="border-b border-gray-200">
+                            <td className="py-4 pr-8 font-light">M</td>
+                            <td className="py-4 px-8 font-light">66 CM / 25.9"</td>
+                            <td className="py-4 px-8 font-light">62 CM / 24.4"</td>
+                          </tr>
+                          <tr className="border-b border-gray-200">
+                            <td className="py-4 pr-8 font-light">L</td>
+                            <td className="py-4 px-8 font-light">68 CM / 26.7"</td>
+                            <td className="py-4 px-8 font-light">64 CM / 25.1"</td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
-                    
-                    {/* Pants Size Guide */}
-                    <div className="relative aspect-[3/4] w-full">
-                      <Image
-                        src="/size-guide-pants.jpg"
-                        alt="Pants Size Guide"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                    
-                    {/* Shorts Size Guide */}
-                    <div className="relative aspect-[3/4] w-full">
-                      <Image
-                        src="/size-guide-shorts.jpg"
-                        alt="Shorts Size Guide"
-                        fill
-                        className="object-contain"
-                      />
+                  </div>
+                </div>
+              </div>
+            </CollapsibleSection>
+
+            <CollapsibleSection title="How to Measure">
+              <div className="flex justify-between items-start">
+                <div className="flex-1 max-w-2xl ml-auto">
+                  <div className="text-sm space-y-4">
+                    <p className="font-light">For the most accurate measurements:</p>
+                    <div className="space-y-2">
+                      <p className="font-light">• Piece Length (A): Measure from the highest point of the shoulder to the bottom hem</p>
+                      <p className="font-light">• Chest Width (B): Measure across the chest from armpit to armpit</p>
+                      <p className="font-light">• Use a flat surface and lay the garment flat</p>
+                      <p className="font-light">• Ensure the garment is not stretched when measuring</p>
                     </div>
                   </div>
                 </div>
