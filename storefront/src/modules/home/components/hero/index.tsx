@@ -14,7 +14,7 @@ const Hero = () => {
           <div 
             className="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
             style={{
-              backgroundImage: "url('/ZIPPER4504_fd50cec1-1eb8-4150-b158-1a6a3c4dd625.png.webp')",
+              backgroundImage: "url('/femalemodel1.png.webp')",
             }}
           >
             <div className="absolute bottom-0 left-0 right-0 h-full bg-gradient-to-b from-transparent to-black/50">
@@ -32,7 +32,7 @@ const Hero = () => {
           <div 
             className="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
             style={{
-              backgroundImage: "url('/1000GSMHOODIE1.png.webp')",
+              backgroundImage: "url('/malemodel1.png.webp')",
             }}
           >
             <div className="absolute bottom-0 left-0 right-0 h-full bg-gradient-to-b from-transparent to-black/50">
