@@ -23,7 +23,7 @@ export default async function Footer() {
           Free In-Store Returns
         </LocalizedClientLink>
         <LocalizedClientLink href="/delivery-returns" className="hover:underline">
-          S2.99 Fixed Fee DR Postal Returns
+          $2.99 Fixed Fee DR Postal Returns
         </LocalizedClientLink>
       </div>
       <div className="content-container flex flex-col w-full">
