@@ -8,22 +8,6 @@ const Hero = () => {
       {/* Background images container */}
       <div className="absolute inset-0 w-full h-[112%] flex z-0">
         <LocalizedClientLink 
-          href="/mens"
-          className="w-1/2 h-full relative group cursor-pointer z-[1]"
-        >
-          <div 
-            className="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
-            style={{
-              backgroundImage: "url('/1000GSMHOODIE1.png.webp')",
-            }}
-          >
-            <div className="w-full h-full bg-black bg-opacity-20 flex items-end pb-[12%] p-8">
-              <span className="text-white text-3xl font-light pointer-events-none">Men</span>
-            </div>
-          </div>
-        </LocalizedClientLink>
-
-        <LocalizedClientLink 
           href="/womens"
           className="w-1/2 h-full relative group cursor-pointer z-[1]"
         >
@@ -35,6 +19,22 @@ const Hero = () => {
           >
             <div className="w-full h-full bg-black bg-opacity-20 flex items-end pb-[12%] p-8">
               <span className="text-white text-3xl font-light pointer-events-none">Women</span>
+            </div>
+          </div>
+        </LocalizedClientLink>
+
+        <LocalizedClientLink 
+          href="/mens"
+          className="w-1/2 h-full relative group cursor-pointer z-[1]"
+        >
+          <div 
+            className="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+            style={{
+              backgroundImage: "url('/1000GSMHOODIE1.png.webp')",
+            }}
+          >
+            <div className="w-full h-full bg-black bg-opacity-20 flex items-end pb-[12%] p-8">
+              <span className="text-white text-3xl font-light pointer-events-none">Men</span>
             </div>
           </div>
         </LocalizedClientLink>
