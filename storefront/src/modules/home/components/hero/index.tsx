@@ -66,6 +66,22 @@ const Hero = () => {
           </h1>
         </a>
       </div>
+
+      {/* Delivery info banner */}
+      <div className="absolute bottom-0 left-0 right-0 bg-[#3c3535] text-white z-[3] flex justify-between px-4 py-2 text-sm">
+        <LocalizedClientLink href="/delivery-returns" className="hover:underline">
+          Free Delivery Over £150*
+        </LocalizedClientLink>
+        <LocalizedClientLink href="/delivery-returns" className="hover:underline">
+          UK Next Day Delivery
+        </LocalizedClientLink>
+        <LocalizedClientLink href="/delivery-returns" className="hover:underline">
+          Free In-Store Returns
+        </LocalizedClientLink>
+        <LocalizedClientLink href="/delivery-returns" className="hover:underline">
+          £2.99 Fixed Fee UK Postal Returns
+        </LocalizedClientLink>
+      </div>
     </div>
   )
 }
