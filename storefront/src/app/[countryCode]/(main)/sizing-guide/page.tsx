@@ -8,26 +8,58 @@ export const metadata: Metadata = {
   description: "Find your perfect fit with our detailed sizing guide for all House of Joseph Lynch garments.",
 }
 
-const HOODIES = [
+const PRODUCTS = [
   {
     title: "SHIRTS",
-    image: "/180shirt.webp",
-    measurements: "/300shirt.webp"
+    images: [
+      {
+        src: "/180shirt.webp",
+        alt: "180GSM Shirt Sizing"
+      },
+      {
+        src: "/300shirt.webp",
+        alt: "300GSM Shirt Sizing"
+      }
+    ]
   },
   {
     title: "CREWNECKS",
-    image: "/450crew.webp",
-    measurements: "/600crew.webp"
+    images: [
+      {
+        src: "/450crew.webp",
+        alt: "450GSM Crewneck Sizing"
+      },
+      {
+        src: "/600crew.webp",
+        alt: "600GSM Crewneck Sizing"
+      }
+    ]
   },
   {
     title: "SWEATPANTS",
-    image: "/450Sweatpants.webp",
-    measurements: "/600Sweatpants.webp"
+    images: [
+      {
+        src: "/450Sweatpants.webp",
+        alt: "450GSM Sweatpants Sizing"
+      },
+      {
+        src: "/600Sweatpants.webp",
+        alt: "600GSM Sweatpants Sizing"
+      }
+    ]
   },
   {
-    title: "SWEATSHIRTS",
-    image: "/450Sweatshirt.webp",
-    measurements: "/600Sweatshirt.webp"
+    title: "HOODIES",
+    images: [
+      {
+        src: "/450Hoodie.webp",
+        alt: "450GSM Hoodie Sizing"
+      },
+      {
+        src: "/600Hoodie.webp",
+        alt: "600GSM Hoodie Sizing"
+      }
+    ]
   }
 ]
 
@@ -65,32 +97,26 @@ export default function SizingGuidePage() {
 
           {/* Right Column - Content */}
           <div className="flex-1">
-            {HOODIES.map((hoodie) => (
-              <CollapsibleSection key={hoodie.title} title={hoodie.title}>
+            {PRODUCTS.map((product) => (
+              <CollapsibleSection key={product.title} title={product.title}>
                 <div className="flex justify-between items-start">
                   <div className="flex-1 max-w-4xl ml-auto">
                     <div className="text-sm space-y-8">
                       <div className="grid grid-cols-2 gap-8">
-                        {/* Hoodie Diagram */}
-                        <div className="relative aspect-[3/4] w-full">
-                          <Image
-                            src={hoodie.image}
-                            alt={`${hoodie.title} Measurement Guide`}
-                            fill
-                            className="object-contain"
-                            priority
-                          />
-                        </div>
-                        {/* Measurements Table Image */}
-                        <div className="relative aspect-[3/4] w-full">
-                          <Image
-                            src={hoodie.measurements}
-                            alt={`${hoodie.title} Size Chart`}
-                            fill
-                            className="object-contain"
-                            priority
-                          />
-                        </div>
+                        {product.images.map((image, index) => (
+                          <div key={index} className="relative w-full bg-gray-50">
+                            <div className="aspect-[3/4]">
+                              <Image
+                                src={image.src}
+                                alt={image.alt}
+                                fill
+                                className="object-contain"
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                                priority={index === 0}
+                              />
+                            </div>
+                          </div>
+                        ))}
                       </div>
                     </div>
                   </div>
@@ -107,7 +133,7 @@ export default function SizingGuidePage() {
                       <LocalizedClientLink href="/contact" className="underline hover:text-gray-600">
                         contact us
                       </LocalizedClientLink>
-                      . Our team will assign a specialist who will be happy to assist you.
+                      . Our team will be happy to assist you.
                     </p>
                   </div>
                 </div>
