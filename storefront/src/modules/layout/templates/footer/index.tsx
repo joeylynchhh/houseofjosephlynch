@@ -176,12 +176,22 @@ export default async function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/legal-notice"
+                    href="/payments"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
-                    Legal Notice
+                    Payments
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/sizing-guide"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-ui-fg-base"
+                  >
+                    Sizing Guide
                   </a>
                 </li>
               </ul>
