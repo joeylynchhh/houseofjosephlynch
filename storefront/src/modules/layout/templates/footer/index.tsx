@@ -166,12 +166,12 @@ export default async function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/terms-of-service"
+                    href="/terms-and-conditions"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-ui-fg-base"
                   >
-                    Terms of Service
+                    Terms and Conditions
                   </a>
                 </li>
                 <li>
