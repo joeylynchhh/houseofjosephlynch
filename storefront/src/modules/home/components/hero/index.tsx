@@ -4,15 +4,15 @@ import LocalizedClientLink from "@modules/common/components/localized-client-lin
 
 const Hero = () => {
   return (
-    <div className="h-screen w-full border-b border-ui-border-base relative bg-ui-bg-subtle overflow-hidden">
+    <div className="h-[88vh] w-full border-b border-ui-border-base relative bg-ui-bg-subtle overflow-hidden">
       {/* Background images container */}
-      <div className="absolute inset-0 w-full h-full flex z-0">
+      <div className="absolute inset-0 w-full h-[112%] flex z-0">
         <LocalizedClientLink 
           href="/womens"
           className="w-1/2 h-full relative group cursor-pointer z-[1] overflow-hidden"
         >
           <div 
-            className="w-full h-[112%] bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+            className="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
             style={{
               backgroundImage: "url('/ZIPPER4504_fd50cec1-1eb8-4150-b158-1a6a3c4dd625.png.webp')",
             }}
@@ -30,7 +30,7 @@ const Hero = () => {
           className="w-1/2 h-full relative group cursor-pointer z-[1] overflow-hidden"
         >
           <div 
-            className="w-full h-[112%] bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+            className="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
             style={{
               backgroundImage: "url('/1000GSMHOODIE1.png.webp')",
             }}
