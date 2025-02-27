@@ -51,7 +51,7 @@ const Hero = () => {
             level="h1"
             className="text-3xl leading-10 text-white font-normal"
           >
-            Welcome to the House of Joseph Lynch!
+            Welcome to the House of Joseph Lynch
           </Heading>
           <Heading
             level="h2"
