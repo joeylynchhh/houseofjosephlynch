@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import CollapsibleSection from "@modules/common/components/collapsible-section"
+import LocalizedClientLink from "@modules/common/components/localized-client-link"
 
 export const metadata: Metadata = {
   title: "Privacy Policy | House of Joseph Lynch",
@@ -9,61 +10,75 @@ export const metadata: Metadata = {
 export default function PrivacyPolicyPage() {
   return (
     <div className="max-w-[1440px] mx-auto">
+      {/* Top Navigation Links */}
+      <div className="px-4 py-8">
+        <div className="flex gap-x-4 text-sm font-light">
+          <LocalizedClientLink href="/" className="text-gray-600 hover:text-black">
+            Help & Info
+          </LocalizedClientLink>
+          <span className="text-gray-600">/</span>
+          <span className="text-black">Privacy Policy</span>
+        </div>
+      </div>
+
       {/* Header Section */}
-      <div className="px-4 py-12 border-b border-gray-200">
+      <div className="px-4 py-8 border-t border-b border-gray-200">
         <div className="flex justify-between items-center">
-          <h1 className="text-2xl font-light">Help & Info</h1>
-          <h1 className="text-2xl font-light">Privacy Policy</h1>
+          <h1 className="text-xl font-light">Help & Info</h1>
+          <h1 className="text-xl font-light">Privacy Policy</h1>
         </div>
       </div>
 
       {/* Main Content */}
       <div className="px-4">
-        <CollapsibleSection title="Information We Collect" defaultOpen={true}>
+        <CollapsibleSection title="Privacy Policy" defaultOpen={true}>
           <div className="flex justify-between items-start">
             <div className="flex-1 max-w-2xl ml-auto">
-              <div className="text-sm space-y-4">
-                <p>We collect information that you provide directly to us, including:</p>
+              <div className="text-sm space-y-6">
+                <p>
+                  House of Joseph Lynch is committed to protecting and respecting your privacy. This policy explains how we use any personal information that you provide to us through our website.
+                </p>
+                <p>
+                  Please read this policy carefully to understand our practices regarding your personal information.
+                </p>
+              </div>
+            </div>
+          </div>
+        </CollapsibleSection>
+
+        <CollapsibleSection title="Terms & Conditions">
+          <div className="flex justify-between items-start">
+            <div className="flex-1 max-w-2xl ml-auto">
+              <div className="text-sm space-y-6">
+                <p>
+                  By accessing and using houseofjosephlynch.com, you accept and agree to be bound by these terms and conditions:
+                </p>
                 <ul className="list-disc pl-5 space-y-2">
-                  <li>Name and contact information</li>
-                  <li>Billing and shipping addresses</li>
-                  <li>Payment information</li>
-                  <li>Order history</li>
-                  <li>Communication preferences</li>
+                  <li>The content of this website is for your general information and use only</li>
+                  <li>All orders are subject to availability and confirmation of the order price</li>
+                  <li>Delivery times may vary according to availability</li>
+                  <li>Prices are subject to change without notice</li>
                 </ul>
               </div>
             </div>
           </div>
         </CollapsibleSection>
 
-        <CollapsibleSection title="How We Use Your Information">
+        <CollapsibleSection title="Cookies">
           <div className="flex justify-between items-start">
             <div className="flex-1 max-w-2xl ml-auto">
-              <div className="text-sm space-y-4">
-                <p>We use the information we collect to:</p>
-                <ul className="list-disc pl-5 space-y-2">
-                  <li>Process your orders and payments</li>
-                  <li>Communicate with you about your orders</li>
-                  <li>Send you marketing communications (with your consent)</li>
-                  <li>Improve our services and website</li>
-                  <li>Comply with legal obligations</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </CollapsibleSection>
-
-        <CollapsibleSection title="Information Sharing">
-          <div className="flex justify-between items-start">
-            <div className="flex-1 max-w-2xl ml-auto">
-              <div className="text-sm space-y-4">
-                <p>We may share your information with:</p>
-                <ul className="list-disc pl-5 space-y-2">
-                  <li>Service providers who assist in our operations</li>
-                  <li>Payment processors</li>
-                  <li>Shipping partners</li>
-                  <li>Legal authorities when required by law</li>
-                </ul>
+              <div className="text-sm space-y-6">
+                <p>
+                  Our website uses cookies to distinguish you from other users of our website. This helps us to provide you with a good experience when you browse our website and also allows us to improve our site.
+                </p>
+                <p>
+                  You can choose to accept or decline cookies. Most web browsers automatically accept cookies, but you can usually modify your browser settings to decline cookies if you prefer.
+                </p>
+                <div className="pt-4">
+                  <LocalizedClientLink href="/cookie-policy" className="underline hover:text-gray-600">
+                    View our Cookie Policy
+                  </LocalizedClientLink>
+                </div>
               </div>
             </div>
           </div>
@@ -72,55 +87,21 @@ export default function PrivacyPolicyPage() {
         <CollapsibleSection title="Your Rights">
           <div className="flex justify-between items-start">
             <div className="flex-1 max-w-2xl ml-auto">
-              <div className="text-sm space-y-4">
-                <p>You have the right to:</p>
+              <div className="text-sm space-y-6">
+                <p>Under data protection laws, you have rights including:</p>
                 <ul className="list-disc pl-5 space-y-2">
-                  <li>Access your personal data</li>
-                  <li>Correct inaccurate data</li>
-                  <li>Request deletion of your data</li>
-                  <li>Opt-out of marketing communications</li>
-                  <li>Lodge a complaint with supervisory authorities</li>
+                  <li>Your right of access</li>
+                  <li>Your right to rectification</li>
+                  <li>Your right to erasure</li>
+                  <li>Your right to restriction of processing</li>
+                  <li>Your right to data portability</li>
+                  <li>Your right to object</li>
                 </ul>
-                <p className="mt-4">
-                  To exercise these rights, please contact us at{" "}
+                <p className="pt-4">
+                  For more information about these rights, please contact us at{" "}
                   <a href="mailto:privacy@houseofjosephlynch.com" className="underline hover:text-gray-600">
                     privacy@houseofjosephlynch.com
                   </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </CollapsibleSection>
-
-        <CollapsibleSection title="Cookies and Tracking">
-          <div className="flex justify-between items-start">
-            <div className="flex-1 max-w-2xl ml-auto">
-              <div className="text-sm space-y-4">
-                <p>We use cookies and similar technologies to:</p>
-                <ul className="list-disc pl-5 space-y-2">
-                  <li>Remember your preferences</li>
-                  <li>Understand how you use our website</li>
-                  <li>Provide personalized content and ads</li>
-                  <li>Analyze website performance</li>
-                </ul>
-                <p className="mt-4">
-                  You can manage your cookie preferences through your browser settings.
-                </p>
-              </div>
-            </div>
-          </div>
-        </CollapsibleSection>
-
-        <CollapsibleSection title="Updates to This Policy">
-          <div className="flex justify-between items-start">
-            <div className="flex-1 max-w-2xl ml-auto">
-              <div className="text-sm space-y-4">
-                <p>
-                  We may update this privacy policy from time to time. The updated version will be indicated by an updated 
-                  "Last revised" date and the updated version will be effective as soon as it is accessible.
-                </p>
-                <p>
-                  Last revised: {new Date().toLocaleDateString()}
                 </p>
               </div>
             </div>
@@ -132,4 +113,3 @@ export default function PrivacyPolicyPage() {
 } 
 
 
-Please create me a privacy policy page design extremely well. Alter the UI for the prviacy policy page to reflect the pciture. Ignore the header. Recognize the banner at the bottom of each picture is the footer. 
