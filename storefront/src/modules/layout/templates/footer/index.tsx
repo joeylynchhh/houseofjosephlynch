@@ -14,16 +14,16 @@ export default async function Footer() {
       {/* Delivery info banner */}
       <div className="w-full bg-[#3c3535] text-white z-[3] flex justify-between px-4 h-[75px] items-center">
         <LocalizedClientLink href="/delivery-returns" className="hover:underline">
-          Free Delivery Over £150*
+          Free Delivery Over $150*
         </LocalizedClientLink>
         <LocalizedClientLink href="/delivery-returns" className="hover:underline">
-          UK Next Day Delivery
+          DR Next Day Delivery
         </LocalizedClientLink>
         <LocalizedClientLink href="/delivery-returns" className="hover:underline">
           Free In-Store Returns
         </LocalizedClientLink>
         <LocalizedClientLink href="/delivery-returns" className="hover:underline">
-          £2.99 Fixed Fee UK Postal Returns
+          $2.99 Fixed Fee DR Postal Returns
         </LocalizedClientLink>
       </div>
       <div className="content-container flex flex-col w-full">
