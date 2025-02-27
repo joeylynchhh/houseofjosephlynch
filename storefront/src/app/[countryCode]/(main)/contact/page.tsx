@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import CollapsibleSection from "@modules/common/components/collapsible-section"
 
 export const metadata: Metadata = {
   title: "Contact | House of Joseph Lynch",
@@ -18,15 +19,13 @@ export default function ContactPage() {
 
       {/* Main Content */}
       <div className="px-4">
-        {/* Contact Us Section */}
-        <div className="py-12 border-b border-gray-200">
+        <CollapsibleSection title="Contact Us" defaultOpen={true}>
           <div className="flex justify-between items-start">
-            <h2 className="text-xl font-light">Contact Us</h2>
-            <div className="flex-1 max-w-2xl">
+            <div className="flex-1 max-w-2xl ml-auto">
               <div className="space-y-8">
                 <div>
                   <p className="text-sm mb-2">Chat on</p>
-                  <a href="https://wa.me/yourwhatsappnumber" className="text-sm underline hover:text-gray-600">
+                  <a href="https://wa.me/16109378696" className="text-sm underline hover:text-gray-600">
                     WhatsApp
                   </a>
                 </div>
@@ -53,26 +52,22 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
-        </div>
+        </CollapsibleSection>
 
-        {/* Customer Service Hours Section */}
-        <div className="py-12 border-b border-gray-200">
+        <CollapsibleSection title="Customer Service Opening Hours">
           <div className="flex justify-between items-start">
-            <h2 className="text-xl font-light">Customer Service Opening Hours</h2>
-            <div className="flex-1 max-w-2xl">
+            <div className="flex-1 max-w-2xl ml-auto">
               <div className="text-sm space-y-1">
                 <p>Monday - Friday: 08:00-20:00</p>
                 <p>Saturday - Sunday: 09:00-17:00</p>
               </div>
             </div>
           </div>
-        </div>
+        </CollapsibleSection>
 
-        {/* Address Section */}
-        <div className="py-12 border-b border-gray-200">
+        <CollapsibleSection title="Address">
           <div className="flex justify-between items-start">
-            <h2 className="text-xl font-light">Address</h2>
-            <div className="flex-1 max-w-2xl space-y-8">
+            <div className="flex-1 max-w-2xl ml-auto space-y-8">
               <div className="text-sm">
                 <p className="mb-1">Warehouse: House of Joseph Lynch</p>
                 <p>Santo Domingo</p>
@@ -86,13 +81,11 @@ export default function ContactPage() {
               <p className="text-sm text-gray-600 pt-4">VAT No: GB123456789</p>
             </div>
           </div>
-        </div>
+        </CollapsibleSection>
 
-        {/* Returns Section */}
-        <div className="py-12 border-b border-gray-200">
+        <CollapsibleSection title="Where to Send Returns">
           <div className="flex justify-between items-start">
-            <h2 className="text-xl font-light">Where to Send Returns</h2>
-            <div className="flex-1 max-w-2xl">
+            <div className="flex-1 max-w-2xl ml-auto">
               <p className="text-sm">
                 Please see details{" "}
                 <a href="/delivery-returns" className="underline hover:text-gray-600">
@@ -101,7 +94,7 @@ export default function ContactPage() {
               </p>
             </div>
           </div>
-        </div>
+        </CollapsibleSection>
       </div>
     </div>
   )
