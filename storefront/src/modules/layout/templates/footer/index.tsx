@@ -11,6 +11,21 @@ export default async function Footer() {
 
   return (
     <footer className="border-t border-ui-border-base w-full">
+      {/* Delivery info banner */}
+      <div className="w-full bg-[#3c3535] text-white z-[3] flex justify-between px-4 h-[75px] items-center">
+        <LocalizedClientLink href="/delivery-returns" className="hover:underline">
+          Free Delivery Over £150*
+        </LocalizedClientLink>
+        <LocalizedClientLink href="/delivery-returns" className="hover:underline">
+          UK Next Day Delivery
+        </LocalizedClientLink>
+        <LocalizedClientLink href="/delivery-returns" className="hover:underline">
+          Free In-Store Returns
+        </LocalizedClientLink>
+        <LocalizedClientLink href="/delivery-returns" className="hover:underline">
+          £2.99 Fixed Fee UK Postal Returns
+        </LocalizedClientLink>
+      </div>
       <div className="content-container flex flex-col w-full">
         <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-40">
           <div>
