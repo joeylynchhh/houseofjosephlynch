@@ -4,7 +4,7 @@ import LocalizedClientLink from "@modules/common/components/localized-client-lin
 
 const Hero = () => {
   return (
-    <div className="h-screen w-full relative bg-ui-bg-subtle">
+    <div className="h-[calc(100vh-75px)] w-full relative bg-ui-bg-subtle">
       {/* Background images container */}
       <div className="absolute inset-0 w-full h-full flex z-0">
         <LocalizedClientLink 
