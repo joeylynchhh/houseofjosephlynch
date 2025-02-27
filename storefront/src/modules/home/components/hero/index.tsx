@@ -6,10 +6,10 @@ const Hero = () => {
   return (
     <div className="h-screen w-full border-b border-ui-border-base relative bg-ui-bg-subtle overflow-hidden">
       {/* Background images container */}
-      <div className="absolute inset-0 w-full h-[112%] flex">
+      <div className="absolute inset-0 w-full h-[112%] flex z-0">
         <LocalizedClientLink 
           href="/womens"
-          className="w-1/2 h-full relative group cursor-pointer"
+          className="w-1/2 h-full relative group cursor-pointer z-[1]"
         >
           <div 
             className="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
@@ -18,14 +18,14 @@ const Hero = () => {
             }}
           >
             <div className="w-full h-full bg-black bg-opacity-20 flex items-end pb-[12%] p-8">
-              <span className="text-white text-3xl font-light pointer-events-none">Woman</span>
+              <span className="text-white text-3xl font-light pointer-events-none">Women</span>
             </div>
           </div>
         </LocalizedClientLink>
 
         <LocalizedClientLink 
           href="/mens"
-          className="w-1/2 h-full relative group cursor-pointer"
+          className="w-1/2 h-full relative group cursor-pointer z-[1]"
         >
           <div 
             className="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
@@ -34,14 +34,14 @@ const Hero = () => {
             }}
           >
             <div className="w-full h-full bg-black bg-opacity-20 flex items-end pb-[12%] p-8">
-              <span className="text-white text-3xl font-light pointer-events-none">Man</span>
+              <span className="text-white text-3xl font-light pointer-events-none">Men</span>
             </div>
           </div>
         </LocalizedClientLink>
       </div>
 
       {/* Existing content overlay */}
-      <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center small:p-32 gap-6">
+      <div className="absolute inset-0 z-[2] flex flex-col justify-center items-center text-center small:p-32 gap-6">
         <span>
           <Heading
             level="h1"
