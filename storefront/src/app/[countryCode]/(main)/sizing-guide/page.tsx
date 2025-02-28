@@ -14,7 +14,7 @@ export default function SizingGuidePage() {
       <Nav />
       <div className="max-w-[1440px] mx-auto">
         {/* Top Navigation Links */}
-        <div className="px-4 py-8 pt-24">
+        <div className="px-4 py-8 pt-18">
           <div className="flex gap-x-4 text-sm font-light">
             <LocalizedClientLink href="/" className="text-gray-600 hover:text-black">
               Help & Info
