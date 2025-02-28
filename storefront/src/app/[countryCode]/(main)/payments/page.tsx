@@ -41,7 +41,7 @@ export default function PaymentsPage() {
 
           {/* Right Column - Content */}
           <div className="flex-1">
-            <CollapsibleSection title="How Can I Pay?" defaultOpen={true}>
+            <CollapsibleSection title="How Can I Pay?" defaultOpen={false}>
               <div className="flex justify-between items-start">
                 <div className="flex-1 max-w-2xl ml-auto">
                   <div className="text-sm space-y-6">
@@ -64,7 +64,7 @@ export default function PaymentsPage() {
               </div>
             </CollapsibleSection>
 
-            <CollapsibleSection title="Can I Exchange Instead of Refund?">
+            <CollapsibleSection title="Can I Exchange Instead of Refund?" defaultOpen={false}>
               <div className="flex justify-between items-start">
                 <div className="flex-1 max-w-2xl ml-auto">
                   <div className="text-sm space-y-6">

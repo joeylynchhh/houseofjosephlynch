@@ -31,7 +31,7 @@ export default function PrivacyPolicyPage() {
 
       {/* Main Content */}
       <div className="px-4">
-        <CollapsibleSection title="Privacy Policy" defaultOpen={true}>
+        <CollapsibleSection title="Privacy Policy" defaultOpen={false}>
           <div className="flex justify-between items-start">
             <div className="flex-1 max-w-2xl ml-auto">
               <div className="text-sm space-y-6">
@@ -46,7 +46,7 @@ export default function PrivacyPolicyPage() {
           </div>
         </CollapsibleSection>
 
-        <CollapsibleSection title="Terms & Conditions">
+        <CollapsibleSection title="Terms & Conditions" defaultOpen={false}>
           <div className="flex justify-between items-start">
             <div className="flex-1 max-w-2xl ml-auto">
               <div className="text-sm space-y-6">
@@ -64,7 +64,7 @@ export default function PrivacyPolicyPage() {
           </div>
         </CollapsibleSection>
 
-        <CollapsibleSection title="Cookies">
+        <CollapsibleSection title="Cookies" defaultOpen={false}>
           <div className="flex justify-between items-start">
             <div className="flex-1 max-w-2xl ml-auto">
               <div className="text-sm space-y-6">
@@ -84,7 +84,7 @@ export default function PrivacyPolicyPage() {
           </div>
         </CollapsibleSection>
 
-        <CollapsibleSection title="Your Rights">
+        <CollapsibleSection title="Your Rights" defaultOpen={false}>
           <div className="flex justify-between items-start">
             <div className="flex-1 max-w-2xl ml-auto">
               <div className="text-sm space-y-6">

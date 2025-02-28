@@ -31,7 +31,7 @@ export default function TermsOfServicePage() {
 
       {/* Main Content */}
       <div className="px-4">
-        <CollapsibleSection title="Information About the Website and Manière De Voir Goods" defaultOpen={true}>
+        <CollapsibleSection title="Information About the Website and Manière De Voir Goods" defaultOpen={false}>
           <div className="flex justify-between items-start">
             <div className="flex-1 max-w-2xl ml-auto">
               <div className="text-sm space-y-6">
@@ -43,7 +43,7 @@ export default function TermsOfServicePage() {
           </div>
         </CollapsibleSection>
 
-        <CollapsibleSection title="Purchasing Goods Online">
+        <CollapsibleSection title="Purchasing Goods Online" defaultOpen={false}>
           <div className="flex justify-between items-start">
             <div className="flex-1 max-w-2xl ml-auto">
               <div className="text-sm space-y-6">
@@ -59,7 +59,7 @@ export default function TermsOfServicePage() {
           </div>
         </CollapsibleSection>
 
-        <CollapsibleSection title="Use License">
+        <CollapsibleSection title="Use License" defaultOpen={false}>
           <div className="flex justify-between items-start">
             <div className="flex-1 max-w-2xl ml-auto">
               <div className="text-sm space-y-6">
@@ -69,7 +69,7 @@ export default function TermsOfServicePage() {
           </div>
         </CollapsibleSection>
 
-        <CollapsibleSection title="Disclaimer">
+        <CollapsibleSection title="Disclaimer" defaultOpen={false}>
           <div className="flex justify-between items-start">
             <div className="flex-1 max-w-2xl ml-auto">
               <div className="text-sm space-y-6">
@@ -79,7 +79,7 @@ export default function TermsOfServicePage() {
           </div>
         </CollapsibleSection>
 
-        <CollapsibleSection title="Links">
+        <CollapsibleSection title="Links" defaultOpen={false}>
           <div className="flex justify-between items-start">
             <div className="flex-1 max-w-2xl ml-auto">
               <div className="text-sm space-y-6">
@@ -89,7 +89,7 @@ export default function TermsOfServicePage() {
           </div>
         </CollapsibleSection>
 
-        <CollapsibleSection title="Site Terms">
+        <CollapsibleSection title="Site Terms" defaultOpen={false}>
           <div className="flex justify-between items-start">
             <div className="flex-1 max-w-2xl ml-auto">
               <div className="text-sm space-y-6">
@@ -99,7 +99,7 @@ export default function TermsOfServicePage() {
           </div>
         </CollapsibleSection>
 
-        <CollapsibleSection title="Governing Law">
+        <CollapsibleSection title="Governing Law" defaultOpen={false}>
           <div className="flex justify-between items-start">
             <div className="flex-1 max-w-2xl ml-auto">
               <div className="text-sm space-y-6">
@@ -109,7 +109,7 @@ export default function TermsOfServicePage() {
           </div>
         </CollapsibleSection>
 
-        <CollapsibleSection title="Klarna">
+        <CollapsibleSection title="Klarna" defaultOpen={false}>
           <div className="flex justify-between items-start">
             <div className="flex-1 max-w-2xl ml-auto">
               <div className="text-sm space-y-6">
@@ -124,7 +124,7 @@ export default function TermsOfServicePage() {
           </div>
         </CollapsibleSection>
 
-        <CollapsibleSection title="California Privacy Laws">
+        <CollapsibleSection title="California Privacy Laws" defaultOpen={false}>
           <div className="flex justify-between items-start">
             <div className="flex-1 max-w-2xl ml-auto">
               <div className="text-sm space-y-6">

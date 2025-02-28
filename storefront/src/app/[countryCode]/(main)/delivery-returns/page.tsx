@@ -42,6 +42,17 @@ export default function DeliveryReturnsPage() {
 
           {/* Right Column - Content */}
           <div className="flex-1">
+          <CollapsibleSection title="Deliver To: US | EU | CA | AU">
+              <div className="flex justify-between items-start">
+                <div className="flex-1 max-w-2xl ml-auto">
+                  <div className="text-sm space-y-6">
+                    <p>International Priority Delivery (3-5 working days)</p>
+                    <p>Express Shipping Available</p>
+                  </div>
+                </div>
+              </div>
+            </CollapsibleSection>
+            
             <CollapsibleSection title="Deliver To: UK">
               <div className="flex justify-between items-start">
                 <div className="flex-1 max-w-2xl ml-auto">
@@ -109,17 +120,6 @@ export default function DeliveryReturnsPage() {
                 <div className="flex-1 max-w-2xl ml-auto">
                   <div className="text-sm space-y-6">
                     <p>International Standard Delivery (7-10 working days)</p>
-                  </div>
-                </div>
-              </div>
-            </CollapsibleSection>
-
-            <CollapsibleSection title="Deliver To: US | EU | CA | AU">
-              <div className="flex justify-between items-start">
-                <div className="flex-1 max-w-2xl ml-auto">
-                  <div className="text-sm space-y-6">
-                    <p>International Priority Delivery (3-5 working days)</p>
-                    <p>Express Shipping Available</p>
                   </div>
                 </div>
               </div>
