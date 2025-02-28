@@ -38,8 +38,12 @@ export default function PrivacyPolicyPage() {
             <div className="flex justify-between items-start">
               <div className="flex-1 max-w-2xl ml-auto">
                 <div className="text-sm space-y-6">
-                  <p></p>
-                  <p></p>
+                  <p>
+                    House of Joseph Lynch is committed to protecting and respecting your privacy. This policy explains how we use any personal information that you provide to us through our website.
+                  </p>
+                  <p>
+                    Please read this policy carefully to understand our practices regarding your personal information.
+                  </p>
                 </div>
               </div>
             </div>
@@ -49,12 +53,14 @@ export default function PrivacyPolicyPage() {
             <div className="flex justify-between items-start">
               <div className="flex-1 max-w-2xl ml-auto">
                 <div className="text-sm space-y-6">
-                  <p></p>
+                  <p>
+                    By accessing and using houseofjosephlynch.com, you accept and agree to be bound by these terms and conditions:
+                  </p>
                   <ul className="list-disc pl-5 space-y-2">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>The content of this website is for your general information and use only</li>
+                    <li>All orders are subject to availability and confirmation of the order price</li>
+                    <li>Delivery times may vary according to availability</li>
+                    <li>Prices are subject to change without notice</li>
                   </ul>
                 </div>
               </div>
@@ -65,11 +71,15 @@ export default function PrivacyPolicyPage() {
             <div className="flex justify-between items-start">
               <div className="flex-1 max-w-2xl ml-auto">
                 <div className="text-sm space-y-6">
-                  <p></p>
-                  <p></p>
+                  <p>
+                    Our website uses cookies to distinguish you from other users of our website. This helps us to provide you with a good experience when you browse our website and also allows us to improve our site.
+                  </p>
+                  <p>
+                    You can choose to accept or decline cookies. Most web browsers automatically accept cookies, but you can usually modify your browser settings to decline cookies if you prefer.
+                  </p>
                   <div className="pt-4">
                     <LocalizedClientLink href="/cookie-policy" className="underline hover:text-gray-600">
-                      
+                      View our Cookie Policy
                     </LocalizedClientLink>
                   </div>
                 </div>
@@ -81,18 +91,19 @@ export default function PrivacyPolicyPage() {
             <div className="flex justify-between items-start">
               <div className="flex-1 max-w-2xl ml-auto">
                 <div className="text-sm space-y-6">
-                  <p></p>
+                  <p>Under data protection laws, you have rights including:</p>
                   <ul className="list-disc pl-5 space-y-2">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Your right of access</li>
+                    <li>Your right to rectification</li>
+                    <li>Your right to erasure</li>
+                    <li>Your right to restriction of processing</li>
+                    <li>Your right to data portability</li>
+                    <li>Your right to object</li>
                   </ul>
                   <p className="pt-4">
+                    For more information about these rights, please contact us at{" "}
                     <a href="mailto:privacy@houseofjosephlynch.com" className="underline hover:text-gray-600">
-                      
+                      privacy@houseofjosephlynch.com
                     </a>
                   </p>
                 </div>

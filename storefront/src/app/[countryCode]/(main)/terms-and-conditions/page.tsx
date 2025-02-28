@@ -35,7 +35,9 @@ export default function TermsOfServicePage() {
           <div className="flex justify-between items-start">
             <div className="flex-1 max-w-2xl ml-auto">
               <div className="text-sm space-y-6">
-                <p></p>
+                <p>
+                  This website is operated by House of Joseph Lynch. Throughout the site, the terms "we", "us" and "our" refer to House of Joseph Lynch. We offer this website, including all information, tools and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.
+                </p>
               </div>
             </div>
           </div>
@@ -45,12 +47,12 @@ export default function TermsOfServicePage() {
           <div className="flex justify-between items-start">
             <div className="flex-1 max-w-2xl ml-auto">
               <div className="text-sm space-y-6">
-                <p></p>
+                <p>By placing an order through this site, you warrant that:</p>
                 <ul className="list-disc pl-5 space-y-2">
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
+                  <li>You are legally capable of entering into binding contracts</li>
+                  <li>You are at least 18 years old</li>
+                  <li>The information you provide during the ordering process is accurate and complete</li>
+                  <li>The payment details you provide are valid and correct</li>
                 </ul>
               </div>
             </div>
@@ -61,7 +63,7 @@ export default function TermsOfServicePage() {
           <div className="flex justify-between items-start">
             <div className="flex-1 max-w-2xl ml-auto">
               <div className="text-sm space-y-6">
-                <p></p>
+                <p>Permission is granted to temporarily download one copy of the materials (information or software) on House of Joseph Lynch's website for personal, non-commercial transitory viewing only.</p>
               </div>
             </div>
           </div>
@@ -71,7 +73,7 @@ export default function TermsOfServicePage() {
           <div className="flex justify-between items-start">
             <div className="flex-1 max-w-2xl ml-auto">
               <div className="text-sm space-y-6">
-                <p></p>
+                <p>The materials on House of Joseph Lynch's website are provided on an 'as is' basis. We make no warranties, expressed or implied, and hereby disclaim and negate all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p>
               </div>
             </div>
           </div>
@@ -81,7 +83,7 @@ export default function TermsOfServicePage() {
           <div className="flex justify-between items-start">
             <div className="flex-1 max-w-2xl ml-auto">
               <div className="text-sm space-y-6">
-                <p></p>
+                <p>House of Joseph Lynch has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by House of Joseph Lynch of the site. Use of any such linked website is at the user's own risk.</p>
               </div>
             </div>
           </div>
@@ -91,7 +93,7 @@ export default function TermsOfServicePage() {
           <div className="flex justify-between items-start">
             <div className="flex-1 max-w-2xl ml-auto">
               <div className="text-sm space-y-6">
-                <p></p>
+                <p>We reserve the right, at our sole discretion, to update, change or replace any part of these Terms of Service by posting updates and changes to our website. It is your responsibility to check our website periodically for changes.</p>
               </div>
             </div>
           </div>
@@ -101,7 +103,7 @@ export default function TermsOfServicePage() {
           <div className="flex justify-between items-start">
             <div className="flex-1 max-w-2xl ml-auto">
               <div className="text-sm space-y-6">
-                <p></p>
+                <p>These terms and conditions are governed by and construed in accordance with the laws of the Dominican Republic and you irrevocably submit to the exclusive jurisdiction of the courts in that location.</p>
               </div>
             </div>
           </div>
@@ -111,11 +113,11 @@ export default function TermsOfServicePage() {
           <div className="flex justify-between items-start">
             <div className="flex-1 max-w-2xl ml-auto">
               <div className="text-sm space-y-6">
-                <p></p>
+                <p>In cooperation with Klarna Bank AB (publ), we offer you the following payment methods. Payment will be processed by Klarna.</p>
                 <ul className="list-disc pl-5 space-y-2">
-                  <li></li>
-                  <li></li>
-                  <li></li>
+                  <li>Pay in 30 days</li>
+                  <li>Pay in 3 installments</li>
+                  <li>Financing</li>
                 </ul>
               </div>
             </div>
@@ -126,7 +128,7 @@ export default function TermsOfServicePage() {
           <div className="flex justify-between items-start">
             <div className="flex-1 max-w-2xl ml-auto">
               <div className="text-sm space-y-6">
-                <p></p>
+                <p>If you are a California resident, you have specific rights regarding your personal information. For more information, please see our Privacy Policy.</p>
               </div>
             </div>
           </div>
