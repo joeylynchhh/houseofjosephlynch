@@ -19,7 +19,7 @@ const Hero = () => {
           >
             <div className="absolute bottom-0 left-0 right-0 h-full bg-gradient-to-b from-transparent to-black/50">
               <div className="absolute bottom-8 left-8">
-                <span className="text-white text-3xl font-light pointer-events-none">Women</span>
+                <span className="text-white text-3xl font-light">Women</span>
               </div>
             </div>
           </div>
@@ -37,7 +37,7 @@ const Hero = () => {
           >
             <div className="absolute bottom-0 left-0 right-0 h-full bg-gradient-to-b from-transparent to-black/50">
               <div className="absolute bottom-8 left-8">
-                <span className="text-white text-3xl font-light pointer-events-none">Men</span>
+                <span className="text-white text-3xl font-light">Men</span>
               </div>
             </div>
           </div>
