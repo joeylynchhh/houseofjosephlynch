@@ -1,5 +1,6 @@
 import { Metadata } from "next"
 import { notFound } from "next/navigation"
+import Nav from "@modules/layout/templates/nav"
 
 import ProductTemplate from "@modules/products/templates"
 import { getRegion, listRegions } from "@lib/data/regions"
@@ -80,10 +81,15 @@ export default async function ProductPage({ params }: Props) {
   }
 
   return (
-    <ProductTemplate
-      product={pricedProduct}
-      region={region}
-      countryCode={params.countryCode}
-    />
+    <>
+      <Nav />
+      <div className="pt-24">
+        <ProductTemplate
+          product={pricedProduct}
+          region={region}
+          countryCode={params.countryCode}
+        />
+      </div>
+    </>
   )
 }

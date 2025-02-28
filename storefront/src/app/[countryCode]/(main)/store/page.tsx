@@ -1,5 +1,5 @@
 import { Metadata } from "next"
-
+import Nav from "@modules/layout/templates/nav"
 import { SortOptions } from "@modules/store/components/refinement-list/sort-products"
 import StoreTemplate from "@modules/store/templates"
 
@@ -22,10 +22,15 @@ export default async function StorePage({ searchParams, params }: Params) {
   const { sortBy, page } = searchParams
 
   return (
-    <StoreTemplate
-      sortBy={sortBy}
-      page={page}
-      countryCode={params.countryCode}
-    />
+    <>
+      <Nav />
+      <div className="pt-24">
+        <StoreTemplate
+          sortBy={sortBy}
+          page={page}
+          countryCode={params.countryCode}
+        />
+      </div>
+    </>
   )
 }
