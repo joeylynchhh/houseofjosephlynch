@@ -35,7 +35,7 @@ export default function PaymentsPage() {
           {/* Left Column - Categories */}
           <div className="w-[200px] pt-8">
             <div className="space-y-4 text-sm">
-              <p className="text-gray-600 hover:text-black cursor-pointer">Payments</p>
+              <p className="text-gray-600 hover:text-black cursor-pointer"></p>
             </div>
           </div>
 
@@ -46,18 +46,16 @@ export default function PaymentsPage() {
                 <div className="flex-1 max-w-2xl ml-auto">
                   <div className="text-sm space-y-6">
                     <div className="space-y-4">
-                      <p className="font-light">We accept the following payment methods:</p>
+                      <p className="font-light"></p>
                       <div className="space-y-2">
-                        <p className="font-light">• Credit/Debit Cards (Visa, Mastercard, American Express)</p>
-                        <p className="font-light">• Klarna - Pay in 30 days</p>
-                        <p className="font-light">• Klarna - Pay in 3 installments</p>
-                        <p className="font-light">• Apple Pay</p>
-                        <p className="font-light">• Google Pay</p>
-                        <p className="font-light">• PayPal</p>
+                        <p className="font-light"></p>
+                        <p className="font-light"></p>
+                        <p className="font-light"></p>
+                        <p className="font-light"></p>
+                        <p className="font-light"></p>
+                        <p className="font-light"></p>
                       </div>
-                      <p className="text-gray-600 text-xs pt-2">
-                        *All transactions are secure and encrypted. Your payment information is never stored on our servers.
-                      </p>
+                      <p className="text-gray-600 text-xs pt-2"></p>
                     </div>
                   </div>
                 </div>
@@ -69,22 +67,19 @@ export default function PaymentsPage() {
                 <div className="flex-1 max-w-2xl ml-auto">
                   <div className="text-sm space-y-6">
                     <div className="space-y-4">
-                      <p className="font-light">
-                        Yes, you can exchange your items within 30 days of receipt. Please note:
-                      </p>
+                      <p className="font-light"></p>
                       <div className="space-y-2">
-                        <p className="font-light">• Items must be unworn and in original condition</p>
-                        <p className="font-light">• All original tags must be attached</p>
-                        <p className="font-light">• Original packaging must be included</p>
-                        <p className="font-light">• Exchanges can be processed in-store or via post</p>
-                        <p className="font-light">• For postal exchanges, standard delivery fees apply</p>
+                        <p className="font-light"></p>
+                        <p className="font-light"></p>
+                        <p className="font-light"></p>
+                        <p className="font-light"></p>
+                        <p className="font-light"></p>
                       </div>
                       <div className="pt-4">
                         <LocalizedClientLink 
                           href="/delivery-returns" 
                           className="text-black hover:text-gray-600 underline font-light"
                         >
-                          View our full returns policy
                         </LocalizedClientLink>
                       </div>
                     </div>
