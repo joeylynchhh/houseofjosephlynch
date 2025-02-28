@@ -34,7 +34,7 @@ export default function ContactPage() {
 
         {/* Main Content */}
         <div className="px-4">
-          <CollapsibleSection title="Contact Us" defaultOpen={true}>
+          <CollapsibleSection title="Contact Us" defaultOpen={false}>
             <div className="flex justify-between items-start">
               <div className="flex-1 max-w-2xl ml-auto">
                 <div className="space-y-8">
