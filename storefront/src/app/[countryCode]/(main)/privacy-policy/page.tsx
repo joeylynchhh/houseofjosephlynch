@@ -27,8 +27,8 @@ export default function PrivacyPolicyPage() {
         {/* Header Section */}
         <div className="px-4 py-8 border-t border-b border-gray-200">
           <div className="flex justify-between items-center">
-            <h1 className="text-xl font-light">Help & Info</h1>
-            <h1 className="text-xl font-light">Privacy Policy</h1>
+            <h1 className="text-xl font-light">&nbsp;</h1>
+            <h1 className="text-xl font-light">&nbsp;</h1>
           </div>
         </div>
 
