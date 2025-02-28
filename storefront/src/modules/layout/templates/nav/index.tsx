@@ -1,4 +1,5 @@
 import { Suspense } from "react"
+import { headers } from "next/headers"
 
 import { listRegions } from "@lib/data/regions"
 import { StoreRegion } from "@medusajs/types"
@@ -8,11 +9,15 @@ import SideMenu from "@modules/layout/components/side-menu"
 
 export default async function Nav() {
   const regions = await listRegions().then((regions: StoreRegion[]) => regions)
+  const headersList = headers()
+  const pathname = headersList.get("x-pathname") || "/"
+  const isHomePage = pathname === "/"
 
   return (
-    <div className="fixed top-0 inset-x-0 z-50 group">
-      <header className="relative h-16 mx-auto duration-200 bg-transparent">
-        <nav className="content-container txt-xsmall-plus text-white flex items-center justify-between w-full h-full text-small-regular">
+    <div className={`fixed top-0 inset-x-0 z-50 ${isHomePage ? "group" : ""}`}>
+      <header className={`relative h-16 mx-auto duration-200 ${isHomePage ? "bg-transparent group-hover:bg-white" : "bg-white"}`}>
+        <nav className={`content-container txt-xsmall-plus flex items-center justify-between w-full h-full text-small-regular
+          ${isHomePage ? "text-white group-hover:text-black" : "text-black"}`}>
           <div className="flex-1 basis-0 h-full flex items-center">
             <div className="h-full">
               <SideMenu regions={regions} />
