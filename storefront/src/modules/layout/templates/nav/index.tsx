@@ -14,9 +14,9 @@ export default async function Nav() {
   const isHomePage = pathname === "/"
 
   return (
-    <div className={`fixed top-0 inset-x-0 z-50 ${isHomePage ? "group" : ""}`}>
-      <header className={`relative h-16 mx-auto duration-200 ${isHomePage ? "bg-transparent group-hover:bg-white" : "bg-white"}`}>
-        <nav className={`content-container txt-xsmall-plus flex items-center justify-between w-full h-full text-small-regular ${isHomePage ? "text-white group-hover:text-black" : "text-black"}`}>
+    <div className="fixed top-0 inset-x-0 z-50">
+      <header className={`relative h-16 mx-auto duration-200 ${isHomePage ? "bg-transparent" : "bg-white"}`}>
+        <nav className={`content-container txt-xsmall-plus flex items-center justify-between w-full h-full text-small-regular ${isHomePage ? "text-white" : "text-black"}`}>
           <div className="flex-1 basis-0 h-full flex items-center">
             <div className="h-full">
               <SideMenu regions={regions} />
