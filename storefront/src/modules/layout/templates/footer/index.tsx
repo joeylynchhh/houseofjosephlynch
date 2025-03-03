@@ -28,7 +28,7 @@ export default async function Footer() {
       </div>
       <div className="content-container flex flex-col w-full">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-8">
-          {/* Newsletter Section - Updated with exact styling */}
+          {/* Newsletter Section - Updated layout */}
           <div className="flex flex-col gap-y-8">
             <h3 className="text-base font-light tracking-widest">Sign up to Our Newsletter</h3>
             <div className="flex flex-col gap-y-8">
@@ -41,32 +41,34 @@ export default async function Footer() {
                   className="w-full pb-1 border-b border-gray-300 focus:outline-none text-sm font-light"
                 />
               </div>
-              <div className="flex gap-x-12 items-center">
-                <label className="flex items-center gap-x-3 cursor-pointer">
-                  <input 
-                    type="checkbox" 
-                    className="h-5 w-5 border border-gray-300 checked:bg-[#3c3535] appearance-none"
-                  />
-                  <span className="text-sm font-light tracking-widest">Woman</span>
-                </label>
-                <label className="flex items-center gap-x-3 cursor-pointer">
-                  <input 
-                    type="checkbox" 
-                    className="h-5 w-5 border border-gray-300 checked:bg-[#3c3535] appearance-none"
-                  />
-                  <span className="text-sm font-light tracking-widest">Man</span>
-                </label>
-                <label className="flex items-center gap-x-3 cursor-pointer">
-                  <input 
-                    type="checkbox" 
-                    className="h-5 w-5 border border-gray-300 checked:bg-[#3c3535] appearance-none"
-                  />
-                  <span className="text-sm font-light tracking-widest">All</span>
-                </label>
+              <div className="flex items-center justify-between">
+                <div className="flex gap-x-12 items-center">
+                  <label className="flex items-center gap-x-3 cursor-pointer">
+                    <input 
+                      type="checkbox" 
+                      className="h-5 w-5 border border-gray-300 checked:bg-[#3c3535] appearance-none"
+                    />
+                    <span className="text-sm font-light tracking-widest">Woman</span>
+                  </label>
+                  <label className="flex items-center gap-x-3 cursor-pointer">
+                    <input 
+                      type="checkbox" 
+                      className="h-5 w-5 border border-gray-300 checked:bg-[#3c3535] appearance-none"
+                    />
+                    <span className="text-sm font-light tracking-widest">Man</span>
+                  </label>
+                  <label className="flex items-center gap-x-3 cursor-pointer">
+                    <input 
+                      type="checkbox" 
+                      className="h-5 w-5 border border-gray-300 checked:bg-[#3c3535] appearance-none"
+                    />
+                    <span className="text-sm font-light tracking-widest">All</span>
+                  </label>
+                </div>
+                <button className="w-[264px] py-2 border border-gray-300 text-sm font-light tracking-widest hover:bg-black hover:text-white transition-colors">
+                  Subscribe
+                </button>
               </div>
-              <button className="w-[264px] py-2 border border-gray-300 text-sm font-light tracking-widest hover:bg-black hover:text-white transition-colors">
-                Subscribe
-              </button>
             </div>
           </div>
 
