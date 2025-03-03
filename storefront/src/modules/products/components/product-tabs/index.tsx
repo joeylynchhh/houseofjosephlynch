@@ -23,7 +23,7 @@ const ProductTabs = ({ product }: ProductTabsProps) => {
     },
     {
       label: "Sizing Guide",
-      component: <SizingGuideTab />,
+      component: <SizingGuideTab product={product} />,
     },
   ]
 
@@ -122,11 +122,10 @@ const ShippingInfoTab = () => {
   )
 }
 
-const SizingGuideTab = () => {
+const SizingGuideTab = ({ product }: ProductTabsProps) => {
   return (
     <div className="text-small-regular py-8">
       <div className="grid grid-cols-1 gap-y-8">
-        {/* Size Chart */}
         <div className="overflow-x-auto">
           <table className="min-w-full border-collapse">
             <thead>
@@ -144,35 +143,10 @@ const SizingGuideTab = () => {
                 <td className="py-2 px-4">63-67</td>
                 <td className="py-2 px-4">87-92</td>
               </tr>
-              <tr className="border-b">
-                <td className="py-2 px-4">S</td>
-                <td className="py-2 px-4">87-92</td>
-                <td className="py-2 px-4">67-72</td>
-                <td className="py-2 px-4">92-97</td>
-              </tr>
-              <tr className="border-b">
-                <td className="py-2 px-4">M</td>
-                <td className="py-2 px-4">92-97</td>
-                <td className="py-2 px-4">72-77</td>
-                <td className="py-2 px-4">97-102</td>
-              </tr>
-              <tr className="border-b">
-                <td className="py-2 px-4">L</td>
-                <td className="py-2 px-4">97-102</td>
-                <td className="py-2 px-4">77-82</td>
-                <td className="py-2 px-4">102-107</td>
-              </tr>
-              <tr className="border-b">
-                <td className="py-2 px-4">XL</td>
-                <td className="py-2 px-4">102-107</td>
-                <td className="py-2 px-4">82-87</td>
-                <td className="py-2 px-4">107-112</td>
-              </tr>
             </tbody>
           </table>
         </div>
 
-        {/* Measuring Guide */}
         <div>
           <h3 className="font-semibold mb-4">How to Measure</h3>
           <div className="grid gap-y-4">
@@ -180,22 +154,7 @@ const SizingGuideTab = () => {
               <p className="font-medium">Chest</p>
               <p>Measure around the fullest part of your chest, keeping the tape horizontal.</p>
             </div>
-            <div>
-              <p className="font-medium">Waist</p>
-              <p>Measure around your natural waistline, keeping the tape comfortably loose.</p>
-            </div>
-            <div>
-              <p className="font-medium">Hip</p>
-              <p>Measure around the fullest part of your hips, keeping the tape horizontal.</p>
-            </div>
           </div>
-        </div>
-
-        {/* Additional Notes */}
-        <div>
-          <p className="text-ui-fg-subtle">
-            * These measurements are a guide only. If you're between sizes, choose the larger size for a more comfortable fit.
-          </p>
         </div>
       </div>
     </div>
