@@ -10,9 +10,9 @@ export default async function Footer() {
   const { product_categories } = await getCategoriesList(0, 6)
 
   return (
-    <footer className="w-full">
+    <footer className="w-full relative">
       {/* Delivery info banner */}
-      <div className="w-full bg-[#3c3535] text-white z-[3] flex justify-between px-4 h-[75px] items-center">
+      <div className="w-full bg-[#3c3535] text-white z-[3] flex justify-between px-4 h-[75px] items-center relative">
         <LocalizedClientLink href="/delivery-returns" className="hover:underline">
           Free Delivery Over $150*
         </LocalizedClientLink>

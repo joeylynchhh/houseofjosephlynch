@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="absolute inset-0 w-full h-full flex z-0">
         <a 
           href="/collections/womens"
-          className="w-1/2 h-full relative group cursor-pointer block"
+          className="w-1/2 h-full relative group cursor-pointer block z-[1]"
         >
           <div 
             className="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
@@ -24,7 +24,7 @@ const Hero = () => {
 
         <a 
           href="/collections/mens"
-          className="w-1/2 h-full relative group cursor-pointer block"
+          className="w-1/2 h-full relative group cursor-pointer block z-[1]"
         >
           <div 
             className="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
