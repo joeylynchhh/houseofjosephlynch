@@ -28,41 +28,43 @@ export default async function Footer() {
       </div>
       <div className="content-container flex flex-col w-full">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-8">
-          {/* Newsletter Section - Updated with precise styling */}
-          <div className="flex flex-col gap-y-6">
-            <h3 className="text-base font-light tracking-wide">Sign up to Our Newsletter</h3>
-            <div className="flex flex-col gap-y-6">
+          {/* Newsletter Section - Updated with exact styling */}
+          <div className="flex flex-col gap-y-8">
+            <h3 className="text-base font-light tracking-widest">Sign up to Our Newsletter</h3>
+            <div className="flex flex-col gap-y-8">
               <div className="relative">
+                <label className="absolute -top-6 left-0 text-sm font-light tracking-widest">
+                  Email
+                </label>
                 <input
                   type="email"
-                  placeholder="Email"
-                  className="w-full pb-2 border-b border-gray-200 focus:outline-none text-sm font-light placeholder-gray-500"
+                  className="w-full pb-1 border-b border-gray-300 focus:outline-none text-sm font-light"
                 />
               </div>
-              <div className="flex gap-x-8 items-center">
-                <label className="flex items-center gap-x-2 cursor-pointer">
+              <div className="flex gap-x-12 items-center">
+                <label className="flex items-center gap-x-3 cursor-pointer">
                   <input 
                     type="checkbox" 
-                    className="form-checkbox h-4 w-4 text-black border border-gray-300 rounded-none"
+                    className="h-5 w-5 border border-gray-300 checked:bg-[#3c3535] appearance-none"
                   />
-                  <span className="text-sm font-light tracking-wide">Woman</span>
+                  <span className="text-sm font-light tracking-widest">Woman</span>
                 </label>
-                <label className="flex items-center gap-x-2 cursor-pointer">
+                <label className="flex items-center gap-x-3 cursor-pointer">
                   <input 
                     type="checkbox" 
-                    className="form-checkbox h-4 w-4 text-black border border-gray-300 rounded-none"
+                    className="h-5 w-5 border border-gray-300 checked:bg-[#3c3535] appearance-none"
                   />
-                  <span className="text-sm font-light tracking-wide">Man</span>
+                  <span className="text-sm font-light tracking-widest">Man</span>
                 </label>
-                <label className="flex items-center gap-x-2 cursor-pointer">
+                <label className="flex items-center gap-x-3 cursor-pointer">
                   <input 
                     type="checkbox" 
-                    className="form-checkbox h-4 w-4 text-black border border-gray-300 rounded-none"
+                    className="h-5 w-5 border border-gray-300 checked:bg-[#3c3535] appearance-none"
                   />
-                  <span className="text-sm font-light tracking-wide">All</span>
+                  <span className="text-sm font-light tracking-widest">All</span>
                 </label>
               </div>
-              <button className="w-32 py-2 border border-gray-300 text-sm font-light tracking-wide hover:bg-black hover:text-white transition-colors">
+              <button className="w-[264px] py-2 border border-gray-300 text-sm font-light tracking-widest hover:bg-black hover:text-white transition-colors">
                 Subscribe
               </button>
             </div>
