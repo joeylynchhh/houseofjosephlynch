@@ -121,7 +121,6 @@ const ShippingInfoTab = () => {
     </div>
   )
 }
-// ... existing code ...
 
 const SizeGuideTab = () => {
   return (
