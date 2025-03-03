@@ -56,6 +56,19 @@ export default function DeliveryReturnsPage() {
                 </div>
               </CollapsibleSection>
               
+              <div className="flex-1">
+              <CollapsibleSection title="Deliver To: DR">
+                <div className="flex justify-between items-start">
+                  <div className="flex-1 max-w-2xl ml-auto">
+                    <div className="text-sm space-y-6">
+                      <p>Same Day Priority Delivery in Santo Domingo</p>
+                      <p>Express Shipping Available (1-2 working days)</p>
+                      <p>Standard Delivery (3-5 working days)</p>
+                    </div>
+                  </div>
+                </div>
+              </CollapsibleSection>
+              
               <CollapsibleSection title="Deliver To: UK">
                 <div className="flex justify-between items-start">
                   <div className="flex-1 max-w-2xl ml-auto">
