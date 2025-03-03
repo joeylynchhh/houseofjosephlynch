@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import Image from "next/image"
 import CollapsibleSection from "@modules/common/components/collapsible-section"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import Nav from "@modules/layout/templates/nav"
@@ -38,52 +39,115 @@ export default function SizingGuidePage() {
             {/* Left Column - Categories */}
             <div className="w-[200px] pt-8">
               <div className="space-y-4 text-sm">
-                <p className="text-gray-600">Sizing</p>
-                <p className="text-gray-600">Measurements</p>
+                <p className="text-gray-600">Shirts</p>
+                <p className="text-gray-600">Crew Necks</p>
+                <p className="text-gray-600">Sweatshirts</p>
+                <p className="text-gray-600">Sweatpants</p>
               </div>
             </div>
 
             {/* Right Column - Content */}
             <div className="flex-1">
-              <CollapsibleSection title="Men's Sizing" defaultOpen={false}>
-                <div className="flex justify-between items-start">
-                  <div className="flex-1 max-w-2xl ml-auto">
-                    <div className="text-sm space-y-6">
-                      <p className="font-light">Our men's clothing is designed to fit true to size. For the best fit:</p>
-                      <ul className="list-disc pl-5 space-y-2">
-                        <li>Measure your chest, waist, and hips</li>
-                        <li>Compare your measurements to our size chart</li>
-                        <li>If between sizes, we recommend sizing up</li>
-                      </ul>
+              <CollapsibleSection title="Shirts" defaultOpen={false}>
+                <div className="flex flex-col space-y-6">
+                  <div className="grid grid-cols-2 gap-8">
+                    <div className="relative aspect-[3/4] w-full">
+                      <Image
+                        src="/180shirt.webp"
+                        alt="Shirt sizing guide 1"
+                        fill
+                        className="object-cover"
+                      />
                     </div>
+                    <div className="relative aspect-[3/4] w-full">
+                      <Image
+                        src="/300shirt.webp"
+                        alt="Shirt sizing guide 2"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div className="text-sm space-y-4">
+                    <p className="font-light">Our shirts are designed for a comfortable, tailored fit.</p>
                   </div>
                 </div>
               </CollapsibleSection>
 
-              <CollapsibleSection title="How to Measure" defaultOpen={false}>
-                <div className="flex justify-between items-start">
-                  <div className="flex-1 max-w-2xl ml-auto">
-                    <div className="text-sm space-y-6">
-                      <p className="font-light">For accurate measurements:</p>
-                      <ul className="list-disc pl-5 space-y-2">
-                        <li>Use a flexible tape measure</li>
-                        <li>Measure directly against your body</li>
-                        <li>Stand straight and relaxed</li>
-                        <li>Keep the tape measure level</li>
-                      </ul>
+              <CollapsibleSection title="Crew Necks" defaultOpen={false}>
+                <div className="flex flex-col space-y-6">
+                  <div className="grid grid-cols-2 gap-8">
+                    <div className="relative aspect-[3/4] w-full">
+                      <Image
+                        src="/450crew.webp"
+                        alt="Crew neck sizing guide 1"
+                        fill
+                        className="object-cover"
+                      />
                     </div>
+                    <div className="relative aspect-[3/4] w-full">
+                      <Image
+                        src="/600crew.webp"
+                        alt="Crew neck sizing guide 2"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div className="text-sm space-y-4">
+                    <p className="font-light">Our crew necks provide a classic, relaxed fit.</p>
                   </div>
                 </div>
               </CollapsibleSection>
 
-              <CollapsibleSection title="Size Conversion Chart" defaultOpen={false}>
-                <div className="flex justify-between items-start">
-                  <div className="flex-1 max-w-2xl ml-auto">
-                    <div className="text-sm space-y-6">
-                      <p className="font-light">
-                        For international size conversions and detailed measurements, please refer to our size charts below.
-                      </p>
+              <CollapsibleSection title="Sweatshirts" defaultOpen={false}>
+                <div className="flex flex-col space-y-6">
+                  <div className="grid grid-cols-2 gap-8">
+                    <div className="relative aspect-[3/4] w-full">
+                      <Image
+                        src="/450Hoodie.webp"
+                        alt="Sweatshirt sizing guide 1"
+                        fill
+                        className="object-cover"
+                      />
                     </div>
+                    <div className="relative aspect-[3/4] w-full">
+                      <Image
+                        src="/600Hoodie.webp"
+                        alt="Sweatshirt sizing guide 2"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div className="text-sm space-y-4">
+                    <p className="font-light">Our sweatshirts are designed for optimal comfort and style.</p>
+                  </div>
+                </div>
+              </CollapsibleSection>
+
+              <CollapsibleSection title="Sweatpants" defaultOpen={false}>
+                <div className="flex flex-col space-y-6">
+                  <div className="grid grid-cols-2 gap-8">
+                    <div className="relative aspect-[3/4] w-full">
+                      <Image
+                        src="/450Sweatpants.webp"
+                        alt="Sweatpants sizing guide 1"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="relative aspect-[3/4] w-full">
+                      <Image
+                        src="/600Sweatpants.webp"
+                        alt="Sweatpants sizing guide 2"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div className="text-sm space-y-4">
+                    <p className="font-light">Our sweatpants feature a comfortable, modern fit.</p>
                   </div>
                 </div>
               </CollapsibleSection>
