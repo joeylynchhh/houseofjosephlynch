@@ -21,6 +21,10 @@ const ProductTabs = ({ product }: ProductTabsProps) => {
       label: "Shipping & Returns",
       component: <ShippingInfoTab />,
     },
+    {
+      label: "Sizing Guide",
+      component: <SizingGuideTab />,
+    },
   ]
 
   return (
@@ -112,6 +116,86 @@ const ShippingInfoTab = () => {
               is hassle-free.
             </p>
           </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const SizingGuideTab = () => {
+  return (
+    <div className="text-small-regular py-8">
+      <div className="grid grid-cols-1 gap-y-8">
+        {/* Size Chart */}
+        <div className="overflow-x-auto">
+          <table className="min-w-full border-collapse">
+            <thead>
+              <tr className="border-b">
+                <th className="py-2 px-4 text-left font-semibold">Size</th>
+                <th className="py-2 px-4 text-left font-semibold">Chest (cm)</th>
+                <th className="py-2 px-4 text-left font-semibold">Waist (cm)</th>
+                <th className="py-2 px-4 text-left font-semibold">Hip (cm)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b">
+                <td className="py-2 px-4">XS</td>
+                <td className="py-2 px-4">82-87</td>
+                <td className="py-2 px-4">63-68</td>
+                <td className="py-2 px-4">87-92</td>
+              </tr>
+              <tr className="border-b">
+                <td className="py-2 px-4">S</td>
+                <td className="py-2 px-4">87-92</td>
+                <td className="py-2 px-4">68-73</td>
+                <td className="py-2 px-4">92-97</td>
+              </tr>
+              <tr className="border-b">
+                <td className="py-2 px-4">M</td>
+                <td className="py-2 px-4">92-97</td>
+                <td className="py-2 px-4">73-78</td>
+                <td className="py-2 px-4">97-102</td>
+              </tr>
+              <tr className="border-b">
+                <td className="py-2 px-4">L</td>
+                <td className="py-2 px-4">97-102</td>
+                <td className="py-2 px-4">78-83</td>
+                <td className="py-2 px-4">102-107</td>
+              </tr>
+              <tr>
+                <td className="py-2 px-4">XL</td>
+                <td className="py-2 px-4">102-107</td>
+                <td className="py-2 px-4">83-88</td>
+                <td className="py-2 px-4">107-112</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        {/* Measuring Guide */}
+        <div>
+          <h3 className="font-semibold mb-4">How to Measure</h3>
+          <div className="grid gap-y-4">
+            <div>
+              <p className="font-medium">Chest</p>
+              <p>Measure around the fullest part of your chest, keeping the tape horizontal.</p>
+            </div>
+            <div>
+              <p className="font-medium">Waist</p>
+              <p>Measure around your natural waistline, keeping the tape comfortably loose.</p>
+            </div>
+            <div>
+              <p className="font-medium">Hip</p>
+              <p>Measure around the fullest part of your hips, keeping the tape horizontal.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Additional Notes */}
+        <div>
+          <p className="text-ui-fg-subtle">
+            * These measurements are a guide only. If you're between sizes, choose the larger size for a more comfortable fit.
+          </p>
         </div>
       </div>
     </div>
