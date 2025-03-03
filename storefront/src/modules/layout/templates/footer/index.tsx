@@ -28,17 +28,17 @@ export default async function Footer() {
       </div>
       <div className="content-container flex flex-col w-full">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-8">
-          {/* Newsletter Section - Refined styling */}
+          {/* Newsletter Section - Adjusted font sizes */}
           <div className="flex flex-col gap-y-12">
-            <h3 className="text-xl font-light tracking-[0.2em]">Sign up to Our Newsletter</h3>
+            <h3 className="text-2xl font-light tracking-[0.2em]">Sign up to Our Newsletter</h3>
             <div className="flex flex-col gap-y-12">
               <div className="relative">
-                <label className="absolute -top-6 left-0 text-base font-light tracking-[0.2em]">
+                <label className="absolute -top-6 left-0 text-lg font-light tracking-[0.2em]">
                   Email
                 </label>
                 <input
                   type="email"
-                  className="w-full pb-2 border-b border-gray-300 focus:outline-none text-base font-light"
+                  className="w-full pb-2 border-b border-gray-300 focus:outline-none text-lg font-light"
                 />
               </div>
               <div className="flex items-center gap-x-16">
@@ -51,7 +51,7 @@ export default async function Footer() {
                       />
                       <div className="absolute inset-0 bg-[#3c3535] opacity-0 group-hover:opacity-5 transition-opacity"></div>
                     </div>
-                    <span className="text-base font-light tracking-[0.2em]">Woman</span>
+                    <span className="text-lg font-light tracking-[0.2em]">Woman</span>
                   </label>
                   <label className="flex items-center gap-x-3 cursor-pointer group">
                     <div className="relative w-6 h-6 border border-gray-300">
@@ -61,7 +61,7 @@ export default async function Footer() {
                       />
                       <div className="absolute inset-0 bg-[#3c3535] opacity-0 group-hover:opacity-5 transition-opacity"></div>
                     </div>
-                    <span className="text-base font-light tracking-[0.2em]">Man</span>
+                    <span className="text-lg font-light tracking-[0.2em]">Man</span>
                   </label>
                   <label className="flex items-center gap-x-3 cursor-pointer group">
                     <div className="relative w-6 h-6 border border-gray-300">
@@ -71,10 +71,10 @@ export default async function Footer() {
                       />
                       <div className="absolute inset-0 bg-[#3c3535] opacity-0 group-hover:opacity-5 transition-opacity"></div>
                     </div>
-                    <span className="text-base font-light tracking-[0.2em]">All</span>
+                    <span className="text-lg font-light tracking-[0.2em]">All</span>
                   </label>
                 </div>
-                <button className="w-[264px] py-2 border border-gray-300 text-base font-light tracking-[0.2em] hover:bg-black hover:text-white transition-colors">
+                <button className="w-[264px] py-2 border border-gray-300 text-lg font-light tracking-[0.2em] hover:bg-black hover:text-white transition-colors">
                   Subscribe
                 </button>
               </div>
