@@ -27,7 +27,7 @@ export default async function Footer() {
         </LocalizedClientLink>
       </div>
       <div className="content-container flex flex-col w-full">
-        <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between py-40">
+        <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between">
           <div>
             <LocalizedClientLink
               href="/"
