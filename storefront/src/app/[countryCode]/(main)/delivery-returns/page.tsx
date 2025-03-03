@@ -56,7 +56,7 @@ export default function DeliveryReturnsPage() {
                 </div>
               </CollapsibleSection>
               
-              <div className="flex-1">
+
               <CollapsibleSection title="Deliver To: DR">
                 <div className="flex justify-between items-start">
                   <div className="flex-1 max-w-2xl ml-auto">
