@@ -21,10 +21,6 @@ const ProductTabs = ({ product }: ProductTabsProps) => {
       label: "Shipping & Returns",
       component: <ShippingInfoTab />,
     },
-    {
-      label: "Sizing Guide",
-      component: <SizingGuideTab product={product} />,
-    },
   ]
 
   return (
@@ -122,43 +118,6 @@ const ShippingInfoTab = () => {
   )
 }
 
-const SizingGuideTab = ({ product }: ProductTabsProps) => {
-  return (
-    <div className="text-small-regular py-8">
-      <div className="grid grid-cols-1 gap-y-8">
-        <div className="overflow-x-auto">
-          <table className="min-w-full border-collapse">
-            <thead>
-              <tr className="border-b">
-                <th className="py-2 px-4 text-left font-semibold">Size</th>
-                <th className="py-2 px-4 text-left font-semibold">Chest (cm)</th>
-                <th className="py-2 px-4 text-left font-semibold">Waist (cm)</th>
-                <th className="py-2 px-4 text-left font-semibold">Hip (cm)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr className="border-b">
-                <td className="py-2 px-4">XS</td>
-                <td className="py-2 px-4">82-87</td>
-                <td className="py-2 px-4">63-67</td>
-                <td className="py-2 px-4">87-92</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
 
-        <div>
-          <h3 className="font-semibold mb-4">How to Measure</h3>
-          <div className="grid gap-y-4">
-            <div>
-              <p className="font-medium">Chest</p>
-              <p>Measure around the fullest part of your chest, keeping the tape horizontal.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
 
 export default ProductTabs
