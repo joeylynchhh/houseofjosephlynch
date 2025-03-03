@@ -28,21 +28,22 @@ export default async function Footer() {
       </div>
       <div className="content-container flex flex-col w-full">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-8">
-          {/* Newsletter Section - Refined spacing */}
-          <div className="flex flex-col gap-y-16">
-            <h3 className="text-base font-light tracking-[0.15em]">Sign up to Our Newsletter</h3>
-            <div className="flex flex-col gap-y-16">
+          {/* Newsletter Section */}
+          <div className="flex flex-col gap-y-8">
+            <h3 className="text-[1.75rem] font-light">Sign up to Our Newsletter</h3>
+            <div className="flex flex-col gap-y-8">
               <div className="relative">
-                <label className="absolute -top-6 left-0 text-sm font-light tracking-[0.15em]">
+                <label htmlFor="email-input" className="absolute -top-6 left-0 text-sm font-light">
                   Email
                 </label>
                 <input
+                  id="email-input"
                   type="email"
-                  className="w-full pb-1 border-b border-gray-300 focus:outline-none text-sm font-light"
+                  className="w-full pb-1 border-b border-gray-300 focus:outline-none text-base font-light"
                 />
               </div>
-              <div className="flex items-center gap-x-32">
-                <div className="flex gap-x-16">
+              <div className="flex flex-col gap-y-6">
+                <div className="flex gap-x-12">
                   <label className="flex items-center gap-x-3 cursor-pointer">
                     <div className="relative w-5 h-5 border border-gray-300">
                       <input 
@@ -50,7 +51,7 @@ export default async function Footer() {
                         className="absolute inset-0 opacity-0 w-full h-full cursor-pointer"
                       />
                     </div>
-                    <span className="text-sm font-light tracking-[0.15em]">Woman</span>
+                    <span className="text-sm font-light">Woman</span>
                   </label>
                   <label className="flex items-center gap-x-3 cursor-pointer">
                     <div className="relative w-5 h-5 border border-gray-300">
@@ -59,7 +60,7 @@ export default async function Footer() {
                         className="absolute inset-0 opacity-0 w-full h-full cursor-pointer"
                       />
                     </div>
-                    <span className="text-sm font-light tracking-[0.15em]">Man</span>
+                    <span className="text-sm font-light">Man</span>
                   </label>
                   <label className="flex items-center gap-x-3 cursor-pointer">
                     <div className="relative w-5 h-5 border border-gray-300">
@@ -68,10 +69,13 @@ export default async function Footer() {
                         className="absolute inset-0 opacity-0 w-full h-full cursor-pointer"
                       />
                     </div>
-                    <span className="text-sm font-light tracking-[0.15em]">All</span>
+                    <span className="text-sm font-light">All</span>
                   </label>
                 </div>
-                <button className="w-[264px] h-[40px] border border-gray-300 text-sm font-light tracking-[0.15em] hover:bg-black hover:text-white transition-colors">
+                <button 
+                  type="submit"
+                  className="w-full h-[40px] border border-gray-300 text-sm font-light hover:bg-black hover:text-white transition-colors"
+                >
                   Subscribe
                 </button>
               </div>
