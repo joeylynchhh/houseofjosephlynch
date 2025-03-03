@@ -36,15 +36,6 @@ export default function SizingGuidePage() {
         {/* Main Content */}
         <div className="px-4">
           <div className="flex">
-            {/* Left Column - Categories */}
-            <div className="w-[200px] pt-8">
-              <div className="space-y-4 text-sm">
-                <p className="text-gray-600">Shirts</p>
-                <p className="text-gray-600">Crew Necks</p>
-                <p className="text-gray-600">Sweatshirts</p>
-                <p className="text-gray-600">Sweatpants</p>
-              </div>
-            </div>
 
             {/* Right Column - Content */}
             <div className="flex-1">
