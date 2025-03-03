@@ -12,17 +12,17 @@ export default async function Footer() {
   return (
     <footer className="w-full relative">
       {/* Delivery info banner */}
-      <div className="w-full bg-[#3c3535] text-white z-[3] flex justify-between px-4 h-[75px] items-center relative">
-        <LocalizedClientLink href="/delivery-returns" className="hover:underline">
+      <div className="w-full bg-[#3c3535] text-white z-[3] flex justify-evenly px-8 h-[75px] items-center relative">
+        <LocalizedClientLink href="/delivery-returns" className="hover:underline whitespace-nowrap">
           Free Delivery Over $150*
         </LocalizedClientLink>
-        <LocalizedClientLink href="/delivery-returns" className="hover:underline">
+        <LocalizedClientLink href="/delivery-returns" className="hover:underline whitespace-nowrap">
           DR Next Day Delivery
         </LocalizedClientLink>
-        <LocalizedClientLink href="/delivery-returns" className="hover:underline">
+        <LocalizedClientLink href="/delivery-returns" className="hover:underline whitespace-nowrap">
           Free In-Store Returns
         </LocalizedClientLink>
-        <LocalizedClientLink href="/delivery-returns" className="hover:underline">
+        <LocalizedClientLink href="/delivery-returns" className="hover:underline whitespace-nowrap">
           $2.99 Fixed Fee DR Postal Returns
         </LocalizedClientLink>
       </div>
