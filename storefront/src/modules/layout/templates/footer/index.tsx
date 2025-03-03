@@ -28,21 +28,23 @@ export default async function Footer() {
       </div>
       <div className="content-container flex flex-col w-full">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-8">
-          {/* Brand and Newsletter Section */}
-          <div className="flex flex-col gap-y-6">
+          {/* Newsletter Section */}
+          <div className="flex flex-col gap-y-4">
+            <h3 className="text-base-semi">Sign up to Our Newsletter</h3>
+            <NewsletterForm />
+          </div>
+
+          {/* Brand Section */}
+          <div className="flex flex-col items-center">
             <LocalizedClientLink
               href="/"
               className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase"
             >
               House of Joseph Lynch
             </LocalizedClientLink>
-            <div className="flex flex-col gap-y-4">
-              <h3 className="text-base-semi">Sign up to Our Newsletter</h3>
-              <NewsletterForm />
-            </div>
           </div>
 
-          {/* Categories Section */}
+          {/* Links Section */}
           <div className="text-small-regular gap-10 md:gap-x-16 grid grid-cols-2 sm:grid-cols-3">
             {product_categories && product_categories?.length > 0 && (
               <div className="flex flex-col gap-y-2">
@@ -128,83 +130,81 @@ export default async function Footer() {
                 </ul>
               </div>
             )}
-          </div>
-
-          {/* Links Section */}
-          <div className="flex flex-col gap-y-2">
-            <span className="txt-small-plus txt-ui-fg-base"> </span>
-            <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
-              <li>
-                <a
-                  href="/contact"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-ui-fg-base"
-                >
-                  Contact
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/privacy-policy"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-ui-fg-base"
-                >
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/delivery-returns"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-ui-fg-base"
-                >
-                  Refund Policy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/delivery-returns"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-ui-fg-base"
-                >
-                  Shipping Policy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/terms-and-conditions"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-ui-fg-base"
-                >
-                  Terms and Conditions
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/payments"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-ui-fg-base"
-                >
-                  Payments
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/sizing-guide"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-ui-fg-base"
-                >
-                  Sizing Guide
-                </a>
-              </li>
-            </ul>
+            <div className="flex flex-col gap-y-2">
+              <span className="txt-small-plus txt-ui-fg-base"> </span>
+              <ul className="grid grid-cols-1 gap-y-2 text-ui-fg-subtle txt-small">
+                <li>
+                  <a
+                    href="/contact"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-ui-fg-base"
+                  >
+                    Contact
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/privacy-policy"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-ui-fg-base"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/delivery-returns"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-ui-fg-base"
+                  >
+                    Refund Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/delivery-returns"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-ui-fg-base"
+                  >
+                    Shipping Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/terms-and-conditions"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-ui-fg-base"
+                  >
+                    Terms and Conditions
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/payments"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-ui-fg-base"
+                  >
+                    Payments
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/sizing-guide"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-ui-fg-base"
+                  >
+                    Sizing Guide
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className="flex w-full mb-16 justify-between text-ui-fg-muted">
