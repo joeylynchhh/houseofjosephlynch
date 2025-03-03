@@ -8,7 +8,7 @@ const Hero = () => {
       {/* Background images container */}
       <div className="absolute inset-0 w-full h-full flex z-[1]">
         <a 
-          href="/womens"
+          href="/collections/womens"
           className="w-1/2 h-full relative group cursor-pointer z-[1] block"
         >
           <div 
@@ -18,15 +18,12 @@ const Hero = () => {
             }}
           >
             <div className="absolute bottom-0 left-0 right-0 h-full bg-gradient-to-b from-transparent to-black/50">
-              <div className="absolute bottom-8 left-8">
-                <span className="text-white text-3xl font-light">Women</span>
-              </div>
             </div>
           </div>
         </a>
 
         <a 
-          href="/mens"
+          href="/collections/mens"
           className="w-1/2 h-full relative group cursor-pointer z-[1] block"
         >
           <div 
@@ -36,9 +33,6 @@ const Hero = () => {
             }}
           >
             <div className="absolute bottom-0 left-0 right-0 h-full bg-gradient-to-b from-transparent to-black/50">
-              <div className="absolute bottom-8 left-8">
-                <span className="text-white text-3xl font-light">Men</span>
-              </div>
             </div>
           </div>
         </a>
