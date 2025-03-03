@@ -13,16 +13,16 @@ export default async function Footer() {
     <footer className="w-full relative">
       {/* Delivery info banner */}
       <div className="w-full bg-[#3c3535] text-white z-[3] flex justify-evenly px-8 h-[75px] items-center relative">
-        <LocalizedClientLink href="/delivery-returns" className="hover:underline whitespace-nowrap">
+        <LocalizedClientLink href="/delivery-returns" className="hover:underline whitespace-nowrap text-sm font-light tracking-[0.15em]">
           Free Delivery Over $150*
         </LocalizedClientLink>
-        <LocalizedClientLink href="/delivery-returns" className="hover:underline whitespace-nowrap">
+        <LocalizedClientLink href="/delivery-returns" className="hover:underline whitespace-nowrap text-sm font-light tracking-[0.15em]">
           DR Next Day Delivery
         </LocalizedClientLink>
-        <LocalizedClientLink href="/delivery-returns" className="hover:underline whitespace-nowrap">
+        <LocalizedClientLink href="/delivery-returns" className="hover:underline whitespace-nowrap text-sm font-light tracking-[0.15em]">
           Free In-Store Returns
         </LocalizedClientLink>
-        <LocalizedClientLink href="/delivery-returns" className="hover:underline whitespace-nowrap">
+        <LocalizedClientLink href="/delivery-returns" className="hover:underline whitespace-nowrap text-sm font-light tracking-[0.15em]">
           $2.99 Fixed Fee DR Postal Returns
         </LocalizedClientLink>
       </div>
@@ -38,13 +38,13 @@ export default async function Footer() {
             </LocalizedClientLink>
             <div className="flex flex-col gap-y-8">
               <div className="relative">
-                <label htmlFor="email-input" className="absolute -top-6 left-0 text-sm font-light">
+                <label htmlFor="email-input" className="absolute -top-6 left-0 text-sm font-light tracking-[0.15em]">
                   Email
                 </label>
                 <input
                   id="email-input"
                   type="email"
-                  className="w-full pb-1 border-b border-gray-300 focus:outline-none text-base font-light"
+                  className="w-full pb-1 border-b border-gray-300 focus:outline-none text-sm font-light tracking-[0.15em]"
                 />
               </div>
               <div className="flex flex-col gap-y-6">
@@ -56,7 +56,7 @@ export default async function Footer() {
                         className="absolute inset-0 opacity-0 w-full h-full cursor-pointer"
                       />
                     </div>
-                    <span className="text-sm font-light">Woman</span>
+                    <span className="text-sm font-light tracking-[0.15em]">Woman</span>
                   </label>
                   <label className="flex items-center gap-x-3 cursor-pointer">
                     <div className="relative w-5 h-5 border border-gray-300">
@@ -65,7 +65,7 @@ export default async function Footer() {
                         className="absolute inset-0 opacity-0 w-full h-full cursor-pointer"
                       />
                     </div>
-                    <span className="text-sm font-light">Man</span>
+                    <span className="text-sm font-light tracking-[0.15em]">Man</span>
                   </label>
                   <label className="flex items-center gap-x-3 cursor-pointer">
                     <div className="relative w-5 h-5 border border-gray-300">
@@ -74,12 +74,12 @@ export default async function Footer() {
                         className="absolute inset-0 opacity-0 w-full h-full cursor-pointer"
                       />
                     </div>
-                    <span className="text-sm font-light">All</span>
+                    <span className="text-sm font-light tracking-[0.15em]">All</span>
                   </label>
                 </div>
                 <button 
                   type="submit"
-                  className="w-full h-[40px] border border-gray-300 text-sm font-light hover:bg-black hover:text-white transition-colors"
+                  className="w-full h-[40px] border border-gray-300 text-sm font-light tracking-[0.15em] hover:bg-black hover:text-white transition-colors"
                 >
                   Subscribe
                 </button>
