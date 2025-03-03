@@ -1,7 +1,7 @@
 import { getCategoriesList } from "@lib/data/categories"
 import { getCollectionsList } from "@lib/data/collections"
 import { Text, clx } from "@medusajs/ui"
-
+import NewsletterForm from "@modules/common/components/newsletter-form"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import MedusaCTA from "@modules/layout/components/medusa-cta"
 
@@ -27,8 +27,15 @@ export default async function Footer() {
         </LocalizedClientLink>
       </div>
       <div className="content-container flex flex-col w-full">
-        <div className="flex flex-col gap-y-6 xsmall:flex-row items-start justify-between">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-8">
+          {/* Newsletter Section */}
+          <div className="flex flex-col gap-y-4">
+            <h3 className="text-base-semi">Sign up to Our Newsletter</h3>
+            <NewsletterForm />
+          </div>
+
+          {/* Brand Section */}
+          <div className="flex flex-col items-center">
             <LocalizedClientLink
               href="/"
               className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase"
@@ -36,6 +43,8 @@ export default async function Footer() {
               House of Joseph Lynch
             </LocalizedClientLink>
           </div>
+
+          {/* Links Section */}
           <div className="text-small-regular gap-10 md:gap-x-16 grid grid-cols-2 sm:grid-cols-3">
             {product_categories && product_categories?.length > 0 && (
               <div className="flex flex-col gap-y-2">

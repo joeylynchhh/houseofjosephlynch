@@ -21,10 +21,6 @@ const ProductTabs = ({ product }: ProductTabsProps) => {
       label: "Shipping & Returns",
       component: <ShippingInfoTab />,
     },
-    {
-      label: "Size Guide",
-      component: <SizeGuideTab />,
-    },
   ]
 
   return (
@@ -116,22 +112,6 @@ const ShippingInfoTab = () => {
               is hassle-free.
             </p>
           </div>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-const SizeGuideTab = () => {
-  return (
-    <div className="text-small-regular py-8">
-      <div className="grid grid-cols-1 gap-y-8">
-        <div>
-          <img 
-            src="/size-guide.jpg" 
-            alt="Size guide chart showing measurements"
-            className="w-full max-w-2xl mx-auto"
-          />
         </div>
       </div>
     </div>
