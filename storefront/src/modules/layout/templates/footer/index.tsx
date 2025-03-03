@@ -28,44 +28,53 @@ export default async function Footer() {
       </div>
       <div className="content-container flex flex-col w-full">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-8">
-          {/* Newsletter Section - Updated layout */}
-          <div className="flex flex-col gap-y-8">
-            <h3 className="text-base font-light tracking-widest">Sign up to Our Newsletter</h3>
-            <div className="flex flex-col gap-y-8">
+          {/* Newsletter Section - Refined styling */}
+          <div className="flex flex-col gap-y-12">
+            <h3 className="text-xl font-light tracking-[0.2em]">Sign up to Our Newsletter</h3>
+            <div className="flex flex-col gap-y-12">
               <div className="relative">
-                <label className="absolute -top-6 left-0 text-sm font-light tracking-widest">
+                <label className="absolute -top-6 left-0 text-base font-light tracking-[0.2em]">
                   Email
                 </label>
                 <input
                   type="email"
-                  className="w-full pb-1 border-b border-gray-300 focus:outline-none text-sm font-light"
+                  className="w-full pb-2 border-b border-gray-300 focus:outline-none text-base font-light"
                 />
               </div>
-              <div className="flex items-center justify-between">
-                <div className="flex gap-x-12 items-center">
-                  <label className="flex items-center gap-x-3 cursor-pointer">
-                    <input 
-                      type="checkbox" 
-                      className="h-5 w-5 border border-gray-300 checked:bg-[#3c3535] appearance-none"
-                    />
-                    <span className="text-sm font-light tracking-widest">Woman</span>
+              <div className="flex items-center gap-x-16">
+                <div className="flex gap-x-16 items-center">
+                  <label className="flex items-center gap-x-3 cursor-pointer group">
+                    <div className="relative w-6 h-6 border border-gray-300">
+                      <input 
+                        type="checkbox" 
+                        className="absolute inset-0 opacity-0 w-full h-full cursor-pointer"
+                      />
+                      <div className="absolute inset-0 bg-[#3c3535] opacity-0 group-hover:opacity-5 transition-opacity"></div>
+                    </div>
+                    <span className="text-base font-light tracking-[0.2em]">Woman</span>
                   </label>
-                  <label className="flex items-center gap-x-3 cursor-pointer">
-                    <input 
-                      type="checkbox" 
-                      className="h-5 w-5 border border-gray-300 checked:bg-[#3c3535] appearance-none"
-                    />
-                    <span className="text-sm font-light tracking-widest">Man</span>
+                  <label className="flex items-center gap-x-3 cursor-pointer group">
+                    <div className="relative w-6 h-6 border border-gray-300">
+                      <input 
+                        type="checkbox" 
+                        className="absolute inset-0 opacity-0 w-full h-full cursor-pointer"
+                      />
+                      <div className="absolute inset-0 bg-[#3c3535] opacity-0 group-hover:opacity-5 transition-opacity"></div>
+                    </div>
+                    <span className="text-base font-light tracking-[0.2em]">Man</span>
                   </label>
-                  <label className="flex items-center gap-x-3 cursor-pointer">
-                    <input 
-                      type="checkbox" 
-                      className="h-5 w-5 border border-gray-300 checked:bg-[#3c3535] appearance-none"
-                    />
-                    <span className="text-sm font-light tracking-widest">All</span>
+                  <label className="flex items-center gap-x-3 cursor-pointer group">
+                    <div className="relative w-6 h-6 border border-gray-300">
+                      <input 
+                        type="checkbox" 
+                        className="absolute inset-0 opacity-0 w-full h-full cursor-pointer"
+                      />
+                      <div className="absolute inset-0 bg-[#3c3535] opacity-0 group-hover:opacity-5 transition-opacity"></div>
+                    </div>
+                    <span className="text-base font-light tracking-[0.2em]">All</span>
                   </label>
                 </div>
-                <button className="w-[264px] py-2 border border-gray-300 text-sm font-light tracking-widest hover:bg-black hover:text-white transition-colors">
+                <button className="w-[264px] py-2 border border-gray-300 text-base font-light tracking-[0.2em] hover:bg-black hover:text-white transition-colors">
                   Subscribe
                 </button>
               </div>
