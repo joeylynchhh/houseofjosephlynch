@@ -5,11 +5,11 @@ import LocalizedClientLink from "@modules/common/components/localized-client-lin
 const Hero = () => {
   return (
     <div className="h-screen w-full border-b border-ui-border-base relative bg-ui-bg-subtle">
-      {/* Background images container */}
-      <div className="absolute inset-0 w-full h-full flex z-[1]">
+      {/* Background images container - lower z-index */}
+      <div className="absolute inset-0 w-full h-full flex z-0">
         <a 
           href="/collections/womens"
-          className="w-1/2 h-full relative group cursor-pointer z-[1] block"
+          className="w-1/2 h-full relative group cursor-pointer block"
         >
           <div 
             className="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
@@ -24,7 +24,7 @@ const Hero = () => {
 
         <a 
           href="/collections/mens"
-          className="w-1/2 h-full relative group cursor-pointer z-[1] block"
+          className="w-1/2 h-full relative group cursor-pointer block"
         >
           <div 
             className="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
@@ -38,7 +38,7 @@ const Hero = () => {
         </a>
       </div>
 
-      {/* Content overlay */}
+      {/* Content overlay - keep higher z-index */}
       <div className="pointer-events-none absolute inset-0 z-[2] flex flex-col justify-center items-center text-center small:p-32 gap-6">
         <span>
           <Heading
