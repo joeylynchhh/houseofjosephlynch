@@ -30,7 +30,7 @@ export default async function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-8">
           {/* Newsletter Section */}
           <div className="flex flex-col gap-y-8">
-            <h3 className="text-[1.75rem] font-light">Sign up to Our Newsletter</h3>
+            <h3 className="text-[1.75rem] font-light">House of Joseph Lynch</h3>
             <div className="flex flex-col gap-y-8">
               <div className="relative">
                 <label htmlFor="email-input" className="absolute -top-6 left-0 text-sm font-light">
@@ -84,12 +84,6 @@ export default async function Footer() {
 
           {/* Brand Section */}
           <div className="flex flex-col items-center">
-            <LocalizedClientLink
-              href="/"
-              className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase"
-            >
-              House of Joseph Lynch
-            </LocalizedClientLink>
           </div>
 
           {/* Links Section */}
