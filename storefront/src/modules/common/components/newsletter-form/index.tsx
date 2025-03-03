@@ -16,15 +16,21 @@ const NewsletterForm = () => {
 
   const onSubmit = async (data: NewsletterFormData) => {
     try {
-      // Call to Medusa backend to store subscriber
-      await medusaClient.customers.create({
-        email: data.email,
-        metadata: {
-          newsletter: true,
-          preference: data.gender,
+      const response = await fetch("/store/newsletter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
+        body: JSON.stringify({
+          email: data.email,
+          gender: data.gender,
+        }),
       })
-      
+
+      if (!response.ok) {
+        throw new Error("Subscription failed")
+      }
+
       setSuccess(true)
       setError(null)
       reset()
