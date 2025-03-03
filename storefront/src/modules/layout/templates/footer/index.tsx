@@ -28,10 +28,44 @@ export default async function Footer() {
       </div>
       <div className="content-container flex flex-col w-full">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-8">
-          {/* Newsletter Section */}
-          <div className="flex flex-col gap-y-4">
-            <h3 className="text-base-semi">Sign up to Our Newsletter</h3>
-            <NewsletterForm />
+          {/* Newsletter Section - Updated with precise styling */}
+          <div className="flex flex-col gap-y-6">
+            <h3 className="text-base font-light tracking-wide">Sign up to Our Newsletter</h3>
+            <div className="flex flex-col gap-y-6">
+              <div className="relative">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="w-full pb-2 border-b border-gray-200 focus:outline-none text-sm font-light placeholder-gray-500"
+                />
+              </div>
+              <div className="flex gap-x-8 items-center">
+                <label className="flex items-center gap-x-2 cursor-pointer">
+                  <input 
+                    type="checkbox" 
+                    className="form-checkbox h-4 w-4 text-black border border-gray-300 rounded-none"
+                  />
+                  <span className="text-sm font-light tracking-wide">Woman</span>
+                </label>
+                <label className="flex items-center gap-x-2 cursor-pointer">
+                  <input 
+                    type="checkbox" 
+                    className="form-checkbox h-4 w-4 text-black border border-gray-300 rounded-none"
+                  />
+                  <span className="text-sm font-light tracking-wide">Man</span>
+                </label>
+                <label className="flex items-center gap-x-2 cursor-pointer">
+                  <input 
+                    type="checkbox" 
+                    className="form-checkbox h-4 w-4 text-black border border-gray-300 rounded-none"
+                  />
+                  <span className="text-sm font-light tracking-wide">All</span>
+                </label>
+              </div>
+              <button className="w-32 py-2 border border-gray-300 text-sm font-light tracking-wide hover:bg-black hover:text-white transition-colors">
+                Subscribe
+              </button>
+            </div>
           </div>
 
           {/* Brand Section */}
