@@ -56,7 +56,7 @@ export default async function Footer() {
                         className="absolute inset-0 opacity-0 w-full h-full cursor-pointer"
                       />
                     </div>
-                    <span className="text-sm font-light tracking-[0.15em]">Woman</span>
+                    <span className="text-ui-fg-subtle txt-small">Woman</span>
                   </label>
                   <label className="flex items-center gap-x-3 cursor-pointer">
                     <div className="relative w-5 h-5 border border-gray-300">
@@ -65,7 +65,7 @@ export default async function Footer() {
                         className="absolute inset-0 opacity-0 w-full h-full cursor-pointer"
                       />
                     </div>
-                    <span className="text-sm font-light tracking-[0.15em]">Man</span>
+                    <span className="text-ui-fg-subtle txt-small">Man</span>
                   </label>
                   <label className="flex items-center gap-x-3 cursor-pointer">
                     <div className="relative w-5 h-5 border border-gray-300">
@@ -74,12 +74,12 @@ export default async function Footer() {
                         className="absolute inset-0 opacity-0 w-full h-full cursor-pointer"
                       />
                     </div>
-                    <span className="text-sm font-light tracking-[0.15em]">All</span>
+                    <span className="text-ui-fg-subtle txt-small">All</span>
                   </label>
                 </div>
                 <button 
                   type="submit"
-                  className="w-full h-[40px] border border-gray-300 text-sm font-light tracking-[0.15em] hover:bg-black hover:text-white transition-colors"
+                  className="w-full h-[40px] border border-gray-300 text-ui-fg-subtle txt-small hover:bg-black hover:text-white transition-colors"
                 >
                   Subscribe
                 </button>
