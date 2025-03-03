@@ -12,7 +12,7 @@ export default async function Footer() {
   return (
     <footer className="w-full relative">
       {/* Delivery info banner */}
-      <div className="w-full bg-[#3c3535] text-white z-[3] flex justify-between px-8 h-[45px] items-center relative">
+      <div className="w-full bg-[#3c3535] text-white z-[3] flex justify-between px-4 h-[75px] items-center relative">
         <LocalizedClientLink href="/delivery-returns" className="hover:underline">
           Free Delivery Over $150*
         </LocalizedClientLink>
