@@ -25,18 +25,20 @@ const StoreTemplate = ({
     >
       <RefinementList sortBy={sort} />
       <div className="w-full flex flex-col items-center">
-        <div className="mb-8 text-2xl-semi w-full max-w-[1440px]">
+        <div className="mb-8 text-2xl-semi">
           <h1 data-testid="store-page-title" className="sr-only">
             Products
           </h1>
         </div>
-        <Suspense fallback={<SkeletonProductGrid />}>
-          <PaginatedProducts
-            sortBy={sort}
-            page={pageNumber}
-            countryCode={countryCode}
-          />
-        </Suspense>
+        <div className="w-full max-w-[1200px] mx-auto">
+          <Suspense fallback={<SkeletonProductGrid />}>
+            <PaginatedProducts
+              sortBy={sort}
+              page={pageNumber}
+              countryCode={countryCode}
+            />
+          </Suspense>
+        </div>
       </div>
     </div>
   )
