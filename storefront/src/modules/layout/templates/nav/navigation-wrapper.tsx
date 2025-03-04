@@ -4,7 +4,8 @@ import { usePathname } from "next/navigation"
 
 export default function NavigationWrapper({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
-  const isHomePage = pathname === "/"
+  // Check if pathname is root or just contains country code
+  const isHomePage = pathname === "/" || pathname.match(/^\/[a-zA-Z]{2}\/?$/)
   
   return (
     <div className={`fixed top-0 inset-x-0 z-50 ${isHomePage ? 'bg-transparent' : 'bg-white'}`}>
