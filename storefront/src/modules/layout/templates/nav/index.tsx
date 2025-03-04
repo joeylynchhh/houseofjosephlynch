@@ -12,6 +12,11 @@ export default async function Nav() {
   const headersList = headers()
   const pathname = headersList.get("x-pathname") || "/"
   const isHomePage = pathname === "/"
+  
+  // Debug log
+  console.log('Nav pathname:', pathname)
+  console.log('Is homepage:', isHomePage)
+  console.log('All headers:', Object.fromEntries(headersList.entries()))
 
   return (
     <div className={`fixed top-0 inset-x-0 z-50 ${isHomePage ? 'bg-transparent' : 'bg-white'}`}>
