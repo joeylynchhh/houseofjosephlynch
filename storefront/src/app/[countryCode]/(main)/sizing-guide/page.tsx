@@ -36,7 +36,6 @@ export default function SizingGuidePage() {
         {/* Main Content */}
         <div className="px-4">
           <div className="flex">
-
             {/* Right Column - Content */}
             <div className="flex-1">
               <CollapsibleSection title="Shirts" defaultOpen={false}>
@@ -44,7 +43,7 @@ export default function SizingGuidePage() {
                   <div className="grid grid-cols-2 gap-8">
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src={`/public/180shirt.webp`}
+                        src={`${process.env.NEXT_PUBLIC_BASE_URL}/180shirt.webp`}
                         alt="Shirt sizing guide 1"
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
@@ -53,7 +52,7 @@ export default function SizingGuidePage() {
                     </div>
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src={`/300shirt.webp`}
+                        src={`${process.env.NEXT_PUBLIC_BASE_URL}/300shirt.webp`}
                         alt="Shirt sizing guide 2"
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
@@ -72,7 +71,7 @@ export default function SizingGuidePage() {
                   <div className="grid grid-cols-2 gap-8">
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src={`/450crew.webp`}
+                        src={`${process.env.NEXT_PUBLIC_BASE_URL}/450crew.webp`}
                         alt="Crew neck sizing guide 1"
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
@@ -81,7 +80,7 @@ export default function SizingGuidePage() {
                     </div>
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src={`/600crew.webp`}
+                        src={`${process.env.NEXT_PUBLIC_BASE_URL}/600crew.webp`}
                         alt="Crew neck sizing guide 2"
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
@@ -100,7 +99,7 @@ export default function SizingGuidePage() {
                   <div className="grid grid-cols-2 gap-8">
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src={`/450Hoodie.webp`}
+                        src={`${process.env.NEXT_PUBLIC_BASE_URL}/450Hoodie.webp`}
                         alt="Sweatshirt sizing guide 1"
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
@@ -109,7 +108,7 @@ export default function SizingGuidePage() {
                     </div>
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src={`/600Hoodie.webp`}
+                        src={`${process.env.NEXT_PUBLIC_BASE_URL}/600Hoodie.webp`}
                         alt="Sweatshirt sizing guide 2"
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
@@ -128,7 +127,7 @@ export default function SizingGuidePage() {
                   <div className="grid grid-cols-2 gap-8">
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src={`/450Sweatpants.webp`}
+                        src={`${process.env.NEXT_PUBLIC_BASE_URL}/450Sweatpants.webp`}
                         alt="Sweatpants sizing guide 1"
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
@@ -137,7 +136,7 @@ export default function SizingGuidePage() {
                     </div>
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src={`/600Sweatpants.webp`}
+                        src={`${process.env.NEXT_PUBLIC_BASE_URL}/600Sweatpants.webp`}
                         alt="Sweatpants sizing guide 2"
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
