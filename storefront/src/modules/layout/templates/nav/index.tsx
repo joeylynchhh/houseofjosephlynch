@@ -1,29 +1,13 @@
 import { Suspense } from "react"
-import { usePathname } from "next/navigation"
 import { listRegions } from "@lib/data/regions"
 import { StoreRegion } from "@medusajs/types"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import CartButton from "@modules/layout/components/cart-button"
 import SideMenu from "@modules/layout/components/side-menu"
+import NavigationWrapper from "./navigation-wrapper"
 
 export default async function Nav() {
   const regions = await listRegions().then((regions: StoreRegion[]) => regions)
-  
-  // Create a client component for the navigation wrapper
-  const NavigationWrapper = ({ children }: { children: React.ReactNode }) => {
-    const pathname = usePathname()
-    const isHomePage = pathname === "/"
-    
-    return (
-      <div className={`fixed top-0 inset-x-0 z-50 ${isHomePage ? 'bg-transparent' : 'bg-white'}`}>
-        <header className="relative h-16 mx-auto duration-200">
-          <nav className={`content-container txt-xsmall-plus flex items-center justify-between w-full h-full text-small-regular ${isHomePage ? 'text-white' : 'text-black'}`}>
-            {children}
-          </nav>
-        </header>
-      </div>
-    )
-  }
 
   return (
     <NavigationWrapper>
