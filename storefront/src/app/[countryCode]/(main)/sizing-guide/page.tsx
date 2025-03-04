@@ -44,7 +44,7 @@ export default function SizingGuidePage() {
                   <div className="grid grid-cols-2 gap-8">
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src={`/storefront/public/180shirt.webp`}
+                        src={`/public/180shirt.webp`}
                         alt="Shirt sizing guide 1"
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
