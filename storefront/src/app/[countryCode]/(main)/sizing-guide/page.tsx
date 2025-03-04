@@ -45,8 +45,8 @@ export default function SizingGuidePage() {
                       <Image
                         src="/180shirt.webp"
                         alt="Shirt sizing guide 1"
-                        fill
-                        sizes="(max-width: 768px) 100vw, 50vw"
+                        width={450}
+                        height={600}
                         priority
                       />
                     </div>
@@ -54,8 +54,8 @@ export default function SizingGuidePage() {
                       <Image
                         src="/300shirt.webp"
                         alt="Shirt sizing guide 2"
-                        fill
-                        sizes="(max-width: 768px) 100vw, 50vw"
+                        width={450}
+                        height={600}
                         priority
                       />
                     </div>
@@ -71,19 +71,19 @@ export default function SizingGuidePage() {
                   <div className="grid grid-cols-2 gap-8">
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src="/450crew.webp"
+                        src={`/450crew.webp`}
                         alt="Crew neck sizing guide 1"
-                        fill
-                        sizes="(max-width: 768px) 100vw, 50vw"
+                        width={450}
+                        height={600}
                         priority
                       />
                     </div>
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src="/600crew.webp"
+                        src={`/600crew.webp`}
                         alt="Crew neck sizing guide 2"
-                        fill
-                        sizes="(max-width: 768px) 100vw, 50vw"
+                        width={450}
+                        height={600}
                         priority
                       />
                     </div>
@@ -99,19 +99,19 @@ export default function SizingGuidePage() {
                   <div className="grid grid-cols-2 gap-8">
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src="/450Hoodie.webp"
+                        src={`/450Hoodie.webp`}
                         alt="Sweatshirt sizing guide 1"
-                        fill
-                        sizes="(max-width: 768px) 100vw, 50vw"
+                        width={450}
+                        height={600}
                         priority
                       />
                     </div>
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src="/600Hoodie.webp"
+                        src={`/600Hoodie.webp`}
                         alt="Sweatshirt sizing guide 2"
-                        fill
-                        sizes="(max-width: 768px) 100vw, 50vw"
+                        width={450}
+                        height={600}
                         priority
                       />
                     </div>
@@ -127,19 +127,19 @@ export default function SizingGuidePage() {
                   <div className="grid grid-cols-2 gap-8">
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src="/450Sweatpants.webp"
+                        src={`/450Sweatpants.webp`}
                         alt="Sweatpants sizing guide 1"
-                        fill
-                        sizes="(max-width: 768px) 100vw, 50vw"
+                        width={450}
+                        height={600}
                         priority
                       />
                     </div>
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src="/600Sweatpants.webp"
+                        src={`/600Sweatpants.webp`}
                         alt="Sweatpants sizing guide 2"
-                        fill
-                        sizes="(max-width: 768px) 100vw, 50vw"
+                        width={450}
+                        height={600}
                         priority
                       />
                     </div>
