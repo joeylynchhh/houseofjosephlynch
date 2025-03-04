@@ -43,7 +43,7 @@ export default function SizingGuidePage() {
                   <div className="grid grid-cols-2 gap-8">
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src={`${process.env.NEXT_PUBLIC_BASE_URL}/180shirt.webp`}
+                        src="/180shirt.webp"
                         alt="Shirt sizing guide 1"
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
@@ -52,7 +52,7 @@ export default function SizingGuidePage() {
                     </div>
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src={`${process.env.NEXT_PUBLIC_BASE_URL}/300shirt.webp`}
+                        src="/300shirt.webp"
                         alt="Shirt sizing guide 2"
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
@@ -71,7 +71,7 @@ export default function SizingGuidePage() {
                   <div className="grid grid-cols-2 gap-8">
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src={`${process.env.NEXT_PUBLIC_BASE_URL}/450crew.webp`}
+                        src="/450crew.webp"
                         alt="Crew neck sizing guide 1"
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
@@ -80,7 +80,7 @@ export default function SizingGuidePage() {
                     </div>
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src={`${process.env.NEXT_PUBLIC_BASE_URL}/600crew.webp`}
+                        src="/600crew.webp"
                         alt="Crew neck sizing guide 2"
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
@@ -99,7 +99,7 @@ export default function SizingGuidePage() {
                   <div className="grid grid-cols-2 gap-8">
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src={`${process.env.NEXT_PUBLIC_BASE_URL}/450Hoodie.webp`}
+                        src="/450Hoodie.webp"
                         alt="Sweatshirt sizing guide 1"
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
@@ -108,7 +108,7 @@ export default function SizingGuidePage() {
                     </div>
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src={`${process.env.NEXT_PUBLIC_BASE_URL}/600Hoodie.webp`}
+                        src="/600Hoodie.webp"
                         alt="Sweatshirt sizing guide 2"
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
@@ -127,7 +127,7 @@ export default function SizingGuidePage() {
                   <div className="grid grid-cols-2 gap-8">
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src={`${process.env.NEXT_PUBLIC_BASE_URL}/450Sweatpants.webp`}
+                        src="/450Sweatpants.webp"
                         alt="Sweatpants sizing guide 1"
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
@@ -136,7 +136,7 @@ export default function SizingGuidePage() {
                     </div>
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src={`${process.env.NEXT_PUBLIC_BASE_URL}/600Sweatpants.webp`}
+                        src="/600Sweatpants.webp"
                         alt="Sweatpants sizing guide 2"
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
