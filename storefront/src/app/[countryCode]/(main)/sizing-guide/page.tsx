@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+import { Metadata } from "next"
 import Image from "next/image"
 import CollapsibleSection from "@modules/common/components/collapsible-section"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
@@ -43,7 +43,7 @@ export default function SizingGuidePage() {
                   <div className="grid grid-cols-2 gap-8">
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src="https://picsum.photos/450/600"
+                        src="/180shirt.webp"
                         alt="Shirt sizing guide 1"
                         width={450}
                         height={600}
@@ -99,7 +99,7 @@ export default function SizingGuidePage() {
                   <div className="grid grid-cols-2 gap-8">
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src="/450Hoodie.webp"
+                        src="/450hoodie.webp"
                         alt="Sweatshirt sizing guide 1"
                         width={450}
                         height={600}
@@ -108,7 +108,7 @@ export default function SizingGuidePage() {
                     </div>
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src="/600Hoodie.webp"
+                        src="/600hoodie.webp"
                         alt="Sweatshirt sizing guide 2"
                         width={450}
                         height={600}
@@ -127,7 +127,7 @@ export default function SizingGuidePage() {
                   <div className="grid grid-cols-2 gap-8">
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src="/450Sweatpants.webp"
+                        src="/450sweatpants.webp"
                         alt="Sweatpants sizing guide 1"
                         width={450}
                         height={600}
@@ -136,7 +136,7 @@ export default function SizingGuidePage() {
                     </div>
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src="/600Sweatpants.webp"
+                        src="/600sweatpants.webp"
                         alt="Sweatpants sizing guide 2"
                         width={450}
                         height={600}
