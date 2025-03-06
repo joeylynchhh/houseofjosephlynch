@@ -43,16 +43,7 @@ export default function SizingGuidePage() {
                   <div className="grid grid-cols-2 gap-8">
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src={
-                          "/180shirt.png.webp" ||
-                          "/public/180shirt.png.webp" ||
-                          "./180shirt.png.webp" ||
-                          "../180shirt.png.webp" ||
-                          "../../180shirt.png.webp" ||
-                          "/storefront/public/180shirt.png.webp" ||
-                          "/src/public/180shirt.png.webp" ||
-                          "../../../../public/180shirt.png.webp"
-                        }
+                        src="/180shirt.png.webp"
                         alt="Shirt sizing guide 1"
                         width={450}
                         height={600}
@@ -61,16 +52,7 @@ export default function SizingGuidePage() {
                     </div>
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src={
-                          "/300shirt.png.webp" ||
-                          "/public/300shirt.png.webp" ||
-                          "./300shirt.png.webp" ||
-                          "../300shirt.png.webp" ||
-                          "../../300shirt.png.webp" ||
-                          "/storefront/public/300shirt.png.webp" ||
-                          "/src/public/300shirt.png.webp" ||
-                          "../../../../public/300shirt.png.webp"
-                        }
+                        src="/300shirt.png.webp"
                         alt="Shirt sizing guide 2"
                         width={450}
                         height={600}
@@ -89,16 +71,7 @@ export default function SizingGuidePage() {
                   <div className="grid grid-cols-2 gap-8">
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src={
-                          "/450crew.webp" ||
-                          "/public/450crew.webp" ||
-                          "./450crew.webp" ||
-                          "../450crew.webp" ||
-                          "../../450crew.webp" ||
-                          "/storefront/public/450crew.webp" ||
-                          "/src/public/450crew.webp" ||
-                          "../../../../public/450crew.webp"
-                        }
+                        src="/450crew.png.webp"
                         alt="Crew neck sizing guide 1"
                         width={450}
                         height={600}
@@ -107,16 +80,7 @@ export default function SizingGuidePage() {
                     </div>
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src={
-                          "/600crew.webp" ||
-                          "/public/600crew.webp" ||
-                          "./600crew.webp" ||
-                          "../600crew.webp" ||
-                          "../../600crew.webp" ||
-                          "/storefront/public/600crew.webp" ||
-                          "/src/public/600crew.webp" ||
-                          "../../../../public/600crew.webp"
-                        }
+                        src="/600crew.png.webp"
                         alt="Crew neck sizing guide 2"
                         width={450}
                         height={600}
@@ -135,16 +99,7 @@ export default function SizingGuidePage() {
                   <div className="grid grid-cols-2 gap-8">
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src={
-                          "/450hoodie.webp" ||
-                          "/public/450hoodie.webp" ||
-                          "./450hoodie.webp" ||
-                          "../450hoodie.webp" ||
-                          "../../450hoodie.webp" ||
-                          "/storefront/public/450hoodie.webp" ||
-                          "/src/public/450hoodie.webp" ||
-                          "../../../../public/450hoodie.webp"
-                        }
+                        src="/450hoodie.png.webp"
                         alt="Sweatshirt sizing guide 1"
                         width={450}
                         height={600}
@@ -153,16 +108,7 @@ export default function SizingGuidePage() {
                     </div>
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src={
-                          "/600hoodie.webp" ||
-                          "/public/600hoodie.webp" ||
-                          "./600hoodie.webp" ||
-                          "../600hoodie.webp" ||
-                          "../../600hoodie.webp" ||
-                          "/storefront/public/600hoodie.webp" ||
-                          "/src/public/600hoodie.webp" ||
-                          "../../../../public/600hoodie.webp"
-                        }
+                        src="/600hoodie.png.webp"
                         alt="Sweatshirt sizing guide 2"
                         width={450}
                         height={600}
@@ -181,16 +127,7 @@ export default function SizingGuidePage() {
                   <div className="grid grid-cols-2 gap-8">
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src={
-                          "/450sweatpants.webp" ||
-                          "/public/450sweatpants.webp" ||
-                          "./450sweatpants.webp" ||
-                          "../450sweatpants.webp" ||
-                          "../../450sweatpants.webp" ||
-                          "/storefront/public/450sweatpants.webp" ||
-                          "/src/public/450sweatpants.webp" ||
-                          "../../../../public/450sweatpants.webp"
-                        }
+                        src="/450sweatpants.png.webp"
                         alt="Sweatpants sizing guide 1"
                         width={450}
                         height={600}
@@ -199,16 +136,7 @@ export default function SizingGuidePage() {
                     </div>
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src={
-                          "/600sweatpants.webp" ||
-                          "/public/600sweatpants.webp" ||
-                          "./600sweatpants.webp" ||
-                          "../600sweatpants.webp" ||
-                          "../../600sweatpants.webp" ||
-                          "/storefront/public/600sweatpants.webp" ||
-                          "/src/public/600sweatpants.webp" ||
-                          "../../../../public/600sweatpants.webp"
-                        }
+                        src="/600sweatpants.png.webp"
                         alt="Sweatpants sizing guide 2"
                         width={450}
                         height={600}
