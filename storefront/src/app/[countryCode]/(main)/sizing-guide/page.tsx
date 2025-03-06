@@ -109,7 +109,7 @@ export default function SizingGuidePage() {
                     <div className="relative aspect-[3/4] w-full">
                       <Image
                         src="/600hoodie.png.webp"
-                        alt="Sweatshirt sizing guide 1"
+                        alt="Sweatshirt sizing guide 2"
                         width={450}
                         height={600}
                         priority
