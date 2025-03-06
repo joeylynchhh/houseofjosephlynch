@@ -44,14 +44,14 @@ export default function SizingGuidePage() {
                     <div className="relative aspect-[3/4] w-full">
                       <Image
                         src={
-                          "/180shirt.webp" ||
-                          "/public/180shirt.webp" ||
-                          "./180shirt.webp" ||
-                          "../180shirt.webp" ||
-                          "../../180shirt.webp" ||
-                          "/storefront/public/180shirt.webp" ||
-                          "/src/public/180shirt.webp" ||
-                          "../../../../public/180shirt.webp"
+                          "/180shirt.png.webp" ||
+                          "/public/180shirt.png.webp" ||
+                          "./180shirt.png.webp" ||
+                          "../180shirt.png.webp" ||
+                          "../../180shirt.png.webp" ||
+                          "/storefront/public/180shirt.png.webp" ||
+                          "/src/public/180shirt.png.webp" ||
+                          "../../../../public/180shirt.png.webp"
                         }
                         alt="Shirt sizing guide 1"
                         width={450}
@@ -62,14 +62,14 @@ export default function SizingGuidePage() {
                     <div className="relative aspect-[3/4] w-full">
                       <Image
                         src={
-                          "/300shirt.webp" ||
-                          "/public/300shirt.webp" ||
-                          "./300shirt.webp" ||
-                          "../300shirt.webp" ||
-                          "../../300shirt.webp" ||
-                          "/storefront/public/300shirt.webp" ||
-                          "/src/public/300shirt.webp" ||
-                          "../../../../public/300shirt.webp"
+                          "/300shirt.png.webp" ||
+                          "/public/300shirt.png.webp" ||
+                          "./300shirt.png.webp" ||
+                          "../300shirt.png.webp" ||
+                          "../../300shirt.png.webp" ||
+                          "/storefront/public/300shirt.png.webp" ||
+                          "/src/public/300shirt.png.webp" ||
+                          "../../../../public/300shirt.png.webp"
                         }
                         alt="Shirt sizing guide 2"
                         width={450}
