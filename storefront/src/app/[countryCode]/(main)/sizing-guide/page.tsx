@@ -127,7 +127,7 @@ export default function SizingGuidePage() {
                   <div className="grid grid-cols-2 gap-8">
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src="/450Sweatpants.png.webp"
+                        src="/450Sweatpants1.png.webp"
                         alt="Sweatpants sizing guide 1"
                         width={450}
                         height={600}
