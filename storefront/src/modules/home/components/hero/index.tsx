@@ -43,13 +43,13 @@ const Hero = () => {
         <span>
           <Heading
             level="h1"
-            className="text-3xl leading-10 text-white font-normal"
+            className="text-3xl leading-10 text-transparent font-normal"
           >
             Welcome to the House of Joseph Lynch!
           </Heading>
           <Heading
             level="h2"
-            className="text-3xl leading-10 text-white font-normal"
+            className="text-3xl leading-10 text-transparent font-normal"
           >
             The finest streetwear in the Dominican Republic.
           </Heading>
