@@ -71,7 +71,7 @@ export default function SizingGuidePage() {
                   <div className="grid grid-cols-2 gap-8">
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src="/450crew.webp"
+                        src="/storefront/public/450crew.webp"
                         alt="Crew neck sizing guide 1"
                         width={450}
                         height={600}
