@@ -43,7 +43,7 @@ export default function SizingGuidePage() {
                   <div className="grid grid-cols-2 gap-8">
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src="/180shirt.png.webp"
+                        src="/180shirt1.png.webp"
                         alt="Shirt sizing guide 1"
                         width={450}
                         height={600}
@@ -52,7 +52,7 @@ export default function SizingGuidePage() {
                     </div>
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src="/300shirt.png.webp"
+                        src="/300shirt1.png.webp"
                         alt="Shirt sizing guide 2"
                         width={450}
                         height={600}
@@ -71,7 +71,7 @@ export default function SizingGuidePage() {
                   <div className="grid grid-cols-2 gap-8">
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src="/450crew.png.webp"
+                        src="/450crew1.png.webp"
                         alt="Crew neck sizing guide 1"
                         width={450}
                         height={600}
@@ -80,7 +80,7 @@ export default function SizingGuidePage() {
                     </div>
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src="/600crew.png.webp"
+                        src="/600crew1.png.webp"
                         alt="Crew neck sizing guide 2"
                         width={450}
                         height={600}
@@ -99,7 +99,7 @@ export default function SizingGuidePage() {
                   <div className="grid grid-cols-2 gap-8">
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src="/450Hoodie.png.webp"
+                        src="/450Hoodie1.png.webp"
                         alt="Sweatshirt sizing guide 1"
                         width={450}
                         height={600}
@@ -108,7 +108,7 @@ export default function SizingGuidePage() {
                     </div>
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src="/600Hoodie.png.webp"
+                        src="/600Hoodie1.png.webp"
                         alt="Sweatshirt sizing guide 2"
                         width={450}
                         height={600}
@@ -136,7 +136,7 @@ export default function SizingGuidePage() {
                     </div>
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src="/600Sweatpants.png.webp"
+                        src="/600Sweatpants1.png.webp"
                         alt="Sweatpants sizing guide 2"
                         width={450}
                         height={600}
