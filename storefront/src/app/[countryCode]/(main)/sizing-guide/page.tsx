@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+import { Metadata } from "next"
 import Image from "next/image"
 import CollapsibleSection from "@modules/common/components/collapsible-section"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
