@@ -1,4 +1,4 @@
-import { Metadata } from "next"
+import type { Metadata } from "next"
 import Image from "next/image"
 import CollapsibleSection from "@modules/common/components/collapsible-section"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
@@ -43,7 +43,7 @@ export default function SizingGuidePage() {
                   <div className="grid grid-cols-2 gap-8">
                     <div className="relative aspect-[3/4] w-full">
                       <Image
-                        src="/180shirt.webp"
+                        src="https://picsum.photos/450/600"
                         alt="Shirt sizing guide 1"
                         width={450}
                         height={600}
