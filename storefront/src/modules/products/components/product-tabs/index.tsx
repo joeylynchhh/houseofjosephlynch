@@ -118,4 +118,6 @@ const ShippingInfoTab = () => {
   )
 }
 
+
+
 export default ProductTabs

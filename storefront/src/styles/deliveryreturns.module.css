@@ -1,0 +1,95 @@
+/* styles/DeliveryReturns.module.css */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+  }
+  
+  .section {
+    margin-bottom: 50px;
+  }
+  
+  .section h1 {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 40px 0 25px 0;
+    color: #333;
+    letter-spacing: 0.3px;
+  }
+  
+  .dropdownItem {
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+  }
+  
+  .dropdownHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    cursor: pointer;
+  }
+  
+  .dropdownTitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    letter-spacing: 0.2px;
+  }
+  
+  .dropdownIcon {
+    font-size: 14px;
+    transition: transform 0.3s ease;
+    color: #333;
+  }
+  
+  .dropdownContent {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdownContent.active {
+    max-height: 500px;
+    padding-bottom: 15px;
+  }
+  
+  .dropdownContent p {
+    margin: 8px 0;
+    line-height: 1.5;
+  }
+  
+  .footerBenefits {
+    background-color: #3a302e;
+    color: #fff;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  
+  .benefitItem {
+    flex: 1;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px 20px;
+    }
+    
+    .footerBenefits {
+      flex-direction: column;
+    }
+    
+    .benefitItem {
+      margin-bottom: 10px;
+    }
+  }

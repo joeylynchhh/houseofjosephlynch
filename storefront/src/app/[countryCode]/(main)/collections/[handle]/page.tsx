@@ -9,6 +9,7 @@ import { listRegions } from "@lib/data/regions"
 import { StoreCollection, StoreRegion } from "@medusajs/types"
 import CollectionTemplate from "@modules/collections/templates"
 import { SortOptions } from "@modules/store/components/refinement-list/sort-products"
+import Nav from "@modules/layout/templates/nav"
 
 type Props = {
   params: { handle: string; countryCode: string }
@@ -59,7 +60,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const metadata = {
-    title: `${collection.title} | Medusa Store`,
+    title: `${collection.title} | House of Joseph Lynch`,
     description: `${collection.title} collection`,
   } as Metadata
 
@@ -78,11 +79,16 @@ export default async function CollectionPage({ params, searchParams }: Props) {
   }
 
   return (
-    <CollectionTemplate
-      collection={collection}
-      page={page}
-      sortBy={sortBy}
-      countryCode={params.countryCode}
-    />
+    <>
+      <Nav />
+      <div className="pt-24">
+        <CollectionTemplate
+          collection={collection}
+          page={page}
+          sortBy={sortBy}
+          countryCode={params.countryCode}
+        />
+      </div>
+    </>
   )
 }
