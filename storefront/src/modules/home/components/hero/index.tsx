@@ -55,7 +55,7 @@ const Hero = () => {
           </Heading>
         </span>
         <a
-          href="https://houseofjosephlynch.com/dk/store"
+          href="/store"
           target="_blank"
           rel="noreferrer"
           className="pointer-events-auto"
