@@ -93,6 +93,25 @@ export default function AboutUsPage() {
       </div>
 
       {/* Flagship Store Section */}
+      <div className="py-32">
+        <div className="grid grid-cols-2 gap-32 mb-32">
+          <div className="relative aspect-square">
+            <Image
+              src="/store-interior-2.jpg"
+              alt="House of Joseph Lynch Store Interior"
+              fill
+              className="object-cover grayscale"
+            />
+          </div>
+          <div className="relative aspect-square">
+            <Image
+              src="/store-interior-3.jpg"
+              alt="House of Joseph Lynch Store Interior"
+              fill
+              className="object-cover grayscale"
+            />
+          </div>
+        </div>
         
         <div className="max-w-4xl mx-auto text-center space-y-16 px-4">
           <div>
