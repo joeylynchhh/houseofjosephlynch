@@ -10,6 +10,7 @@ const Layout: React.FC<{
     <div>
       <Nav />
       <main className="relative">{children}</main>
+      <div className="mb-32"></div>
       <Footer />
     </div>
   )
