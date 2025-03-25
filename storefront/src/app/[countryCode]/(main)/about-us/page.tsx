@@ -12,7 +12,7 @@ export default function AboutUsPage() {
   return (
     <div className="max-w-[1440px] mx-auto">
       {/* Hero Section */}
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-2 mt-[140px] ml-[140px]">
         <div className="relative aspect-square">
           <Image
             src="/store-interior-1.jpg"
