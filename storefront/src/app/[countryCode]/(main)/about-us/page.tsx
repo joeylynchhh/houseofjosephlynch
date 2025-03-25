@@ -13,7 +13,7 @@ export default function AboutUsPage() {
     <div className="max-w-[1440px] mx-auto">
       {/* Hero Section */}
       <div className="grid grid-cols-12 mt-[140px]">
-        <div className="col-span-5 relative aspect-[3/4]">
+        <div className="col-start-2 col-span-5 relative aspect-[4/5]">
           <Image
             src="/store-interior-1.jpg"
             alt="House of Joseph Lynch Store Interior"
@@ -22,7 +22,7 @@ export default function AboutUsPage() {
             priority
           />
         </div>
-        <div className="col-span-7 flex flex-col justify-center items-center">
+        <div className="col-span-5 flex flex-col justify-center items-center">
           <div className="max-w-xl px-16">
             <h2 className="text-xl font-extralight text-center">The Vision</h2>
             <div className="w-full h-[0.5px] bg-[#e5e5e5] my-8" />
