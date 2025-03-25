@@ -50,29 +50,29 @@ export default function AboutUsPage() {
       </div>
 
       {/* In-House Design Section */}
-      <div className="grid grid-cols-2 gap-32 px-4 py-32">
-        <div>
+      <div className="grid grid-cols-12 py-32">
+        <div className="col-start-2 col-span-5 flex flex-col justify-center">
           <h2 className="text-xl font-extralight">In-House Design</h2>
-          <div className="w-full h-[0.5px] bg-[#e5e5e5] my-8"></div>
+          <div className="w-full h-[0.5px] bg-[#e5e5e5] my-8" />
           <div className="space-y-12 text-sm font-extralight">
-            <p className="text-center leading-loose">
+            <p className="leading-loose">
               Our in-house design team meticulously craft every product, using 
               their experience and knowledge to create truly unique pieces that 
               resonate with our audience.
             </p>
-            <p className="text-center leading-loose">
+            <p className="leading-loose">
               We expertly source and create durable, innovative fabrics and trims, 
               whilst analysing garment construction tirelessly to ensure every piece 
               stands the test of time.
             </p>
-            <p className="text-center leading-loose">
+            <p className="leading-loose">
               Fit is paramount to every great product and the foundation of our 
               designs. We carefully review every measurement on a garment model, 
               ensuring each silhouette is optimised.
             </p>
           </div>
         </div>
-        <div className="relative aspect-square">
+        <div className="col-start-7 col-span-5 relative aspect-[4/5]">
           <Image
             src="/design-process.jpg"
             alt="House of Joseph Lynch Design Process"
@@ -83,7 +83,7 @@ export default function AboutUsPage() {
       </div>
 
       {/* Store Interior Image */}
-      <div className="relative w-full aspect-[16/9]">
+      <div className="relative w-full aspect-[21/9]">
         <Image
           src="/store-interior-4.jpg"
           alt="House of Joseph Lynch Store Interior"
