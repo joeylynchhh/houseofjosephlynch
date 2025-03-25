@@ -11,114 +11,118 @@ export const metadata: Metadata = {
 export default function AboutUsPage() {
   return (
     <div className="max-w-[1440px] mx-auto">
-      {/* Top Navigation Links */}
-      <div className="px-4 py-8 pt-24">
-        <div className="flex gap-x-4 text-sm font-light">
-          <LocalizedClientLink href="/" className="text-gray-600 hover:text-black">
-            Help & Info
-          </LocalizedClientLink>
-          <span className="text-gray-600">/</span>
-          <span className="text-black">About Us</span>
+      {/* Store Interior Images */}
+      <div className="grid grid-cols-1">
+        <div className="relative w-full aspect-[16/9]">
+          <Image
+            src="/store-interior-1.jpg"
+            alt="House of Joseph Lynch Store Interior"
+            fill
+            className="object-cover grayscale"
+            priority
+          />
         </div>
       </div>
 
-      {/* Header Section */}
-      <div className="px-4 py-8 border-t border-b border-gray-200">
-        <div className="flex justify-between items-center">
-          <h1 className="text-xl font-light">Help & Info</h1>
-          <h1 className="text-xl font-light">About Us</h1>
+      {/* The Vision Section */}
+      <div className="py-32">
+        <h2 className="text-center text-xl font-extralight">The Vision</h2>
+        <div className="w-full h-px bg-[#e5e5e5] my-8"></div>
+        <div className="max-w-4xl mx-auto px-4">
+          <p className="text-center text-sm font-extralight leading-loose">
+            Founded in 2013 by Reece Wabara, Manière De Voir exists to bridge the gap between 
+            high fashion and the high street. Artfully blending design-led details and 
+            extraordinary fits, Reece's vision of high quality, attainable pieces is as relevant today 
+            as it was when he started the brand.
+          </p>
         </div>
       </div>
 
-      {/* Main Content */}
-      <div className="px-4">
-        {/* Store Image Grid */}
-        <div className="grid grid-cols-2 gap-4 mb-12">
-          <div className="relative aspect-square w-full">
+      {/* For the Tastemakers Section */}
+      <div className="py-32">
+        <h2 className="text-center text-xl font-extralight">For the Tastemakers</h2>
+        <div className="w-full h-px bg-[#e5e5e5] my-8"></div>
+        <div className="max-w-4xl mx-auto px-4">
+          <p className="text-center text-sm font-extralight leading-loose">
+            Our mission is to craft distinctive, timeless pieces with impeccable fits that transcend seasons. 
+            For tastemakers who embody our vision, we are dedicated to blending innovation with elegance, 
+            creating designs that captivate today and become enduring icons of style for years to come.
+          </p>
+        </div>
+      </div>
+
+      {/* In-House Design Section */}
+      <div className="grid grid-cols-2 gap-32 px-4 py-32">
+        <div className="space-y-16">
+          <div>
+            <h2 className="text-xl font-extralight">In-House Design</h2>
+            <div className="w-full h-px bg-[#e5e5e5] my-8"></div>
+          </div>
+          <div className="space-y-12 text-sm font-extralight">
+            <p className="text-center leading-loose">
+              Our in-house design team meticulously craft every product, using 
+              their experience and knowledge to create truly unique pieces that 
+              resonate with our audience.
+            </p>
+            <p className="text-center leading-loose">
+              We expertly source and create durable, innovative fabrics and trims, 
+              whilst analysing garment construction tirelessly to ensure every piece 
+              stands the test of time.
+            </p>
+            <p className="text-center leading-loose">
+              Fit is paramount to every great product and the foundation of our 
+              designs. We carefully review every measurement on a garment model, 
+              ensuring each silhouette is optimised.
+            </p>
+          </div>
+        </div>
+        <div className="relative aspect-square">
+          <Image
+            src="/design-process.jpg"
+            alt="House of Joseph Lynch Design Process"
+            fill
+            className="object-cover grayscale"
+          />
+        </div>
+      </div>
+
+      {/* Flagship Store Section */}
+      <div className="py-32">
+        <div className="grid grid-cols-2 gap-32 mb-32">
+          <div className="relative aspect-square">
             <Image
-              src="/store-interior-1.jpg"
+              src="/store-interior-2.jpg"
               alt="House of Joseph Lynch Store Interior"
               fill
               className="object-cover grayscale"
-              priority
             />
           </div>
-          <div className="relative aspect-square w-full">
+          <div className="relative aspect-square">
             <Image
-              src="/store-interior-2.jpg"
-              alt="House of Joseph Lynch Store Display"
+              src="/store-interior-3.jpg"
+              alt="House of Joseph Lynch Store Interior"
               fill
               className="object-cover grayscale"
-              priority
             />
           </div>
         </div>
-
-        <CollapsibleSection title="The Vision" defaultOpen={true}>
-          <div className="flex justify-between items-start">
-            <div className="flex-1 max-w-2xl ml-auto">
-              <div className="text-sm space-y-6">
-                <p className="text-center leading-relaxed">
-                  Founded in 2013 by Reece Wabara, House of Joseph Lynch exists to bridge the gap between high fashion and the high street. Artfully blending design-led details and extraordinary fits, Reece's vision of high quality, attainable pieces is as relevant today as it was when he started the brand.
-                </p>
-              </div>
-            </div>
+        
+        <div className="max-w-4xl mx-auto text-center space-y-16 px-4">
+          <div>
+            <h2 className="text-xl font-extralight">Flagship Store</h2>
+            <div className="w-full h-px bg-[#e5e5e5] my-8"></div>
           </div>
-        </CollapsibleSection>
-
-        <CollapsibleSection title="Our Story">
-          <div className="flex justify-between items-start">
-            <div className="flex-1 max-w-2xl ml-auto">
-              <div className="text-sm space-y-6">
-                <div className="relative aspect-[16/9] w-full mb-6">
-                  <Image
-                    src="/store-interior-3.jpg"
-                    alt="House of Joseph Lynch Store Interior"
-                    fill
-                    className="object-cover grayscale"
-                  />
-                </div>
-                <p className="text-center leading-relaxed">
-                  What began as a small collection in Santo Domingo has grown into a global fashion movement. Our journey is marked by an unwavering commitment to quality, innovation, and accessibility. Each piece in our collection tells a story of meticulous craftsmanship and contemporary design.
-                </p>
-              </div>
-            </div>
+          <p className="text-sm font-extralight leading-loose">
+            Coinciding with our 10th anniversary, we open the doors to our London flagship store on Wednesday 13th December 2023.
+          </p>
+          <p className="text-sm font-extralight leading-loose">
+            "A decade in the making, we are delighted to unveil our flagship store at 354 Oxford Street, London, marking our brand's 10th anniversary. I designed the store with my heart and soul, hoping to spark the transformation needed to revive the perception and allure of the high street. A sincere thank you to the team, the customers, and everyone who has supported the business & myself throughout this journey. Here's to another 10 years."
+          </p>
+          <div className="pt-12">
+            <p className="text-sm font-extralight italic mb-2">Reece Wabara</p>
+            <p className="text-sm font-extralight">Founder and CEO</p>
           </div>
-        </CollapsibleSection>
-
-        <CollapsibleSection title="Design Philosophy">
-          <div className="flex justify-between items-start">
-            <div className="flex-1 max-w-2xl ml-auto">
-              <div className="text-sm space-y-6">
-                <p className="text-center leading-relaxed">
-                  Our design philosophy centers on creating pieces that seamlessly blend luxury with accessibility. We believe in timeless aesthetics with contemporary touches, exceptional quality at attainable price points, and innovative design details that set us apart.
-                </p>
-              </div>
-            </div>
-          </div>
-        </CollapsibleSection>
-
-        <CollapsibleSection title="Visit Us">
-          <div className="flex justify-between items-start">
-            <div className="flex-1 max-w-2xl ml-auto">
-              <div className="text-sm space-y-6">
-                <div className="relative aspect-[16/9] w-full mb-6">
-                  <Image
-                    src="/store-exterior.jpg"
-                    alt="House of Joseph Lynch Store Exterior"
-                    fill
-                    className="object-cover grayscale"
-                  />
-                </div>
-                <div className="text-center">
-                  <p className="mb-4">Experience House of Joseph Lynch in person at our flagship store:</p>
-                  <p className="font-light">Santo Domingo</p>
-                  <p className="font-light">Dominican Republic</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </CollapsibleSection>
+        </div>
       </div>
     </div>
   )
