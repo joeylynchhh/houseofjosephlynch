@@ -8,7 +8,7 @@ const Hero = () => {
       {/* Background images container - lower z-index */}
       <div className="absolute inset-0 w-full h-full flex z-0">
         <a 
-          href="/collections/womens"
+          href="/categories/women"
           className="w-1/2 h-full relative group cursor-pointer block z-[1]"
         >
           <div 
@@ -23,7 +23,7 @@ const Hero = () => {
         </a>
 
         <a 
-          href="/collections/mens"
+          href="/categories/men"
           className="w-1/2 h-full relative group cursor-pointer block z-[1]"
         >
           <div 
