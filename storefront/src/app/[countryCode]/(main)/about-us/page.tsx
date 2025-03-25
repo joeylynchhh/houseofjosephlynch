@@ -94,29 +94,10 @@ export default function AboutUsPage() {
 
       {/* Flagship Store Section */}
       <div className="py-32">
-        <div className="grid grid-cols-2 gap-32 mb-32">
-          <div className="relative aspect-square">
-            <Image
-              src="/store-interior-2.jpg"
-              alt="House of Joseph Lynch Store Interior"
-              fill
-              className="object-cover grayscale"
-            />
-          </div>
-          <div className="relative aspect-square">
-            <Image
-              src="/store-interior-3.jpg"
-              alt="House of Joseph Lynch Store Interior"
-              fill
-              className="object-cover grayscale"
-            />
-          </div>
-        </div>
-        
         <div className="max-w-4xl mx-auto text-center space-y-16 px-4">
           <div>
             <h2 className="text-xl font-extralight">Flagship Store</h2>
-            <div className="w-full h-[0.5px] bg-[#e5e5e5] my-8"></div>
+            <div className="w-full h-[0.5px] bg-[#e5e5e5] my-8" />
           </div>
           <p className="text-sm font-extralight leading-loose">
             Coinciding with our 10th anniversary, we open the doors to our London flagship store on Wednesday 13th December 2023.
