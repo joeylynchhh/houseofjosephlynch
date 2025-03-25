@@ -12,8 +12,8 @@ export default function AboutUsPage() {
   return (
     <div className="max-w-[1440px] mx-auto">
       {/* Hero Section */}
-      <div className="grid grid-cols-2 mt-[140px] ml-[140px]">
-        <div className="relative aspect-square">
+      <div className="grid grid-cols-12 mt-[140px]">
+        <div className="col-span-5 relative aspect-[3/4]">
           <Image
             src="/store-interior-1.jpg"
             alt="House of Joseph Lynch Store Interior"
@@ -22,10 +22,10 @@ export default function AboutUsPage() {
             priority
           />
         </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="col-span-7 flex flex-col justify-center items-center">
           <div className="max-w-xl px-16">
             <h2 className="text-xl font-extralight text-center">The Vision</h2>
-            <div className="w-full h-[0.5px] bg-[#e5e5e5] my-8"></div>
+            <div className="w-full h-[0.5px] bg-[#e5e5e5] my-8" />
             <p className="text-sm font-extralight leading-loose text-center">
               Founded in 2013 by Reece Wabara, Manière De Voir exists to bridge the gap between 
               high fashion and the high street. Artfully blending design-led details and 
