@@ -61,7 +61,7 @@ const Hero = () => {
           className="pointer-events-auto"
         >
           <h1 className="text-white" style={{ textDecoration: "underline" }}>
-            Enter the shop
+            Enter our shop.
           </h1>
         </a>
       </div>
