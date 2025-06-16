@@ -58,7 +58,7 @@ export default function AboutUsPage() {
             <p className="text-center leading-loose">
               Our in-house design team meticulously craft every product, using 
               their experience and knowledge to create truly unique pieces that 
-              resonate with our audience.
+              resonate with our audience. 
             </p>
             <p className="text-center leading-loose">
               We expertly source and create durable, innovative fabrics and trims, 
