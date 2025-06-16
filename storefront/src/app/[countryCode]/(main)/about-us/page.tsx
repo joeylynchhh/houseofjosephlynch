@@ -63,7 +63,7 @@ export default function AboutUsPage() {
             <p className="text-center leading-loose">
               We expertly source and create durable, innovative fabrics and trims, 
               whilst analysing garment construction tirelessly to ensure every piece 
-              stands the test of time.
+              stands the test of time. 
             </p>
             <p className="text-center leading-loose">
               Fit is paramount to every great product and the foundation of our 
